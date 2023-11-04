@@ -1,3 +1,15 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+p > img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+p > video + em {
+    display: block;
+    // transform: translateY(-1rem);
+}
+p > img + em, p > video + em {
+    text-align: center;
+}
