@@ -13,3 +13,9 @@ p > video + em {
 p > img + em, p > video + em {
     text-align: center;
 }
+
+.explorer.mobile-only {
+    ul.overflow:after, ol.overflow:after {
+        background: transparent;
+    }
+}
