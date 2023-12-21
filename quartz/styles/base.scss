@@ -45,7 +45,9 @@ ul,
   color: var(--darkgray);
   fill: var(--darkgray);
   overflow-wrap: anywhere;
-  hyphens: auto;
+  // hyphens: auto;
+  word-wrap: break-word;
+  text-align: left;
 }
 
 .math {
