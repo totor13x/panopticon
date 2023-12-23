@@ -20,28 +20,28 @@ date: 2020-5-25
 
 Но не будем о грустном: в начале месяца я начал делать страницу создания правил. Понимаю, можно было обойтись и прямым редактированием данных через БД, так как страница сама по себе использовалась бы раз в полугодие. Однако эта страница будет полезна моим кураторам, так что и над визуальной частью пришлось покопаться.
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/34bae586-fb5b-4302-b2d1-49903afa5a85.mp4)
+<video controls src="https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/34bae586-fb5b-4302-b2d1-49903afa5a85.mp4"></video>
 *Это самая первая тестовая версия страницы создания правил*
 
 В последствии пришлось отказаться от идеи отрисовки правил в виде такого списка. Отказ стоил мне пары суток работы, но следующая версия меня радует больше. Благодаря убранному отступу на странице будет помещаться больше информации.
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/388bd48e-cf55-4eba-bae2-6df9be1b7c36.mp4)
+<video controls src="https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/388bd48e-cf55-4eba-bae2-6df9be1b7c36.mp4"></video>
 *Редактирование правил в админ-панели.*
 
 Следующим этапом была система банов. Система банов - образно говоря, потому что по факту это комплексная система блокировок, которая включает в себя типы блокировок. Я имею в виду, что при желании, на основе этой системы, можно добавить и другие типы блокировок, будь то гаг в канале дискорда или запрет на использование каких-то предметов.
 
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/595f4c1d-e20d-4b6a-836c-389943ca0bd7.mp4)
+<video controls src="https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/595f4c1d-e20d-4b6a-836c-389943ca0bd7.mp4"></video>
 *Страница блокировки с выбором типа "бан". Почти все функции с старого сайта были перенесены*
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/de104b68-8690-458f-85ee-5864a1c68ab8.mp4)
+<video controls src="https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/de104b68-8690-458f-85ee-5864a1c68ab8.mp4"></video>
 *Проверка работы бана*
 
 После системы блокировок потребовалось написать систему прав и ролей. Это версия сильно отличается от нынешней системы прав-ролей. Распинаться по этому поводу нет желания, да и мало кому будет интересно углубленно читать про технические навороты. Ниже гифка, как будет работать система:
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/c5ba9cea-095e-4454-9e68-d439da5a1e97.mp4)
+<video controls src="https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/c5ba9cea-095e-4454-9e68-d439da5a1e97.mp4"></video>
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/a09cf53c-38f2-4ab6-8b39-b4274f3d9c3e.mp4)
+<video controls src="https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/a09cf53c-38f2-4ab6-8b39-b4274f3d9c3e.mp4"></video>
 *Ну и последняя гифка на сегодня - система пруфов. Любимая страница всей администрации шафта.*
 
 * * *

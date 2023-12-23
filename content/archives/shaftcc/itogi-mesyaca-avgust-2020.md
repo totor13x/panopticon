@@ -13,7 +13,7 @@ date: 2020-9-3
 
 Сеты отличаются более осмысленным интерактивом с пользователем. То есть будут разные предупреждалочки и вариативность. Например, кто-то захочет поделиться конфигурацией своего сета, это можно будет сделать намного проще.
 
-![Бета-версия сетов](https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/e45c4cad-231d-4e16-81ef-4ab6e2b14fd4.mp4)
+<video controls src="https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/e45c4cad-231d-4e16-81ef-4ab6e2b14fd4.mp4"></video>
 *Бета-версия сетов*
 
 Визуал я стараюсь сохранить на оптимальном уровне. Да, понимаю можно всякие анимации добавить на открывающиеся панели, но пока гаррис работает на первом сурсе...
@@ -21,7 +21,7 @@ date: 2020-9-3
 Еще одна деталь - **админ-панель**. Она тоже будет новая, возьму интересные решения с ULX, ServerGuard етц, но это больше волнует админов, конечно.
 
 
-![Макет админ-панели](https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/1d754c53-15eb-4d5c-b0bf-fcc43e946948.mp4)
+<video controls src="https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/1d754c53-15eb-4d5c-b0bf-fcc43e946948.mp4"></video>
 *Макет админ-панели*
 
 Дизайн будет такой-же, как и поинтшоп, сеты, кейсы, трейды...

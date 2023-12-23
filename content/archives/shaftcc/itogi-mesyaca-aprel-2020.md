@@ -33,13 +33,13 @@ date: 2020-4-26
 
 А теперь сладкое - гифки
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/bb58b2f2-01ad-40b2-bbfb-c391c585e99f.mp4)
+<video controls src="https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/bb58b2f2-01ad-40b2-bbfb-c391c585e99f.mp4"></video>
 *Уже написана функциональная часть для большинства типов предметов, так что считайте, что так поинтшоп будет выглядеть уже на самом сервере*
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/a07cf299-3419-4e0b-8ddc-85b99d681025.mp4)
+<video controls src="https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/a07cf299-3419-4e0b-8ddc-85b99d681025.mp4"></video>
 *Ну и самое болезненное для меня - партикли. Это окошко превью далось мне спустя 6 часов, гемор.*
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/7f6f9cad-e196-4fec-b3db-e54c10c35a6a.webm)
+<video controls src="https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/7f6f9cad-e196-4fec-b3db-e54c10c35a6a.webm"></video>
 *Эта гифка показывает функциональность одноразовых предметов*
 
 Над функциональностью предметов я очень долго ковырялся, но оно того стоило. Предметы добавляются с визуальной части сайта и могут настраиваться кураторами или мною и им не требуется знания программирования, чтобы добавить новую модель или маску. По сути я около 2 месяцев писал совершенно новый поинтшоп, который имеет огромную базу для расширения.
@@ -62,7 +62,7 @@ date: 2020-4-26
 
 Вероятно я буду работать над эффектами перемещения. Она будет отрисовываться только до прохождения карты и стороне Т или КТ, которые достаточно далеко от пользователя. У меня на примете есть еще один простенький вариант, который вероятно будет также внедрен.
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/b0f1c340-f9c3-46fc-bef3-f9a6a70e5559.mp4)
+<video controls src="https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/b0f1c340-f9c3-46fc-bef3-f9a6a70e5559.mp4"></video>
 
 Также я экспериментировал с вещами из доты, результат выше
 

@@ -58,13 +58,13 @@ date: 2019-12-29
 
 Ну и напоследок некоторый материал из разработок:
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/d34a243d-c556-4dd9-b91b-328932a68cd3.mp4)
+<video controls src="https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/d34a243d-c556-4dd9-b91b-328932a68cd3.mp4"></video>
 *Это самый первый набросок панели управления клонами батальона*
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/306d94a3-6820-4d15-bf5c-6f0a292dab62.mp4)
+<video controls src="https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/306d94a3-6820-4d15-bf5c-6f0a292dab62.mp4"></video>
 *Эта гифка демонстрирует повороты головой и интегрированные световые мечи*
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/f37128c1-314e-4ed5-8c6c-82e34ba55ce0.mp4)
+<video controls src="https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/f37128c1-314e-4ed5-8c6c-82e34ba55ce0.mp4"></video>
 *А это уже иммерсив-уведомления - для меня оказалось сложным сделать их, но ведь получилось? Главное что они вышли, а удобные или нет - решат боевые единицы ShaftSWRP*
 
 ![](https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/a998c616-445d-4575-9c19-146c1dca7838.gif)

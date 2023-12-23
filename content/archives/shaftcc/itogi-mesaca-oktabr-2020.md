@@ -15,11 +15,11 @@ date: 2020-11-1
 
 Ладно, начнем по поводу изменений за прошедший месяц и начнем с кейсов:
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/e4652310-adce-4036-b535-9183bbc03a9b.mp4)
+<video controls src="https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/e4652310-adce-4036-b535-9183bbc03a9b.mp4"></video>
 
 Визуально кейсы остались прежними, но серверный код подвергся полной переработке (что неудивительно). Естественно, о пролагиваниях сервера говорить не придется - их не будет, так как код выполняется на API, что будет плюсом.
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/405bbfc7-b834-4349-a216-0d6f832c47ad.mp4)
+<video controls src="https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/405bbfc7-b834-4349-a216-0d6f832c47ad.mp4"></video>
 *Трейды... головная боль нескольких месяцев.*
 
 Трейды сами по себе заняли немного моего времени, так как методы взаимодействия предметов уже давно прописаны, мне нужно было просто прописать интерфейс для взаимодействия. В нынешней системе реализовать трейды очень трудно, потому-что сама логика предметов отличается от будущей буквально во всем. Ну, главное теперь они будут.

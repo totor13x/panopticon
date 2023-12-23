@@ -24,7 +24,7 @@ date: 2020-10-5
 Теперь же логи выглядят таким образом:
 
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/daff7dd6-778c-47bd-8805-fac8ec22ddac.mp4)
+<video controls src="https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/daff7dd6-778c-47bd-8805-fac8ec22ddac.mp4"></video>
 *Я был вдохновлен chelog (Octothorp Team, Доброград РП) - спасибо ему*
 
 > Также я, вроде как, придумал как будут выглядеть питомцы. Они будут чем-то напоминать призрака из Destiny, просто потому что я вдохновился именно им.
