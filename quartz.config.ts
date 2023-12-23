@@ -3,13 +3,13 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Digital Garden",
+    pageTitle: "Цифровой огород",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "totor13x.com",
     ignorePatterns: [
       "private",
       "templates",
@@ -30,8 +30,8 @@ const config: QuartzConfig = {
           gray: "#b8b8b8",
           darkgray: "#4e4e4e",
           dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
+          secondary: "#ff8870",
+          tertiary: "##485657",
           highlight: "rgba(143, 159, 169, 0.15)",
         },
         darkMode: {
@@ -40,8 +40,8 @@ const config: QuartzConfig = {
           gray: "#646464",
           darkgray: "#d4d4d4",
           dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
+          secondary: "#ff8870",
+          tertiary: "##485657",
           highlight: "rgba(143, 159, 169, 0.15)",
         },
       },

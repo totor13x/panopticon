@@ -1,3 +1,64 @@
+#explorer-close {
+  background: none;
+  margin: 0;
+  border: 0;
+  width: 70px;
+  padding: 16px;
+  padding-bottom: 0px;
+  cursor: pointer;
+  display: none;
+}
+.head-title .sidebar-open, .sidebar-head .darkmode {
+  display: none;
+}
+
+@media (max-width: 1510px) {
+  .sidebar-head {
+    display: flex;
+    justify-content: space-between;
+    & .darkmode, & .darkmode svg {
+      width: 40px;
+      height: 40px;
+    }
+    & .darkmode {
+      padding: 16px;
+      padding-bottom: 0px;
+    }
+  }
+  #explorer-close {
+    display: block;
+  }
+  .head-title {
+    display: flex;
+    align-items: center;
+    & .sidebar-open {
+      display: inline-flex;
+      margin-right: 24px;
+      width: 40px;
+      cursor: pointer;
+    }
+  }
+  #explorer-content {
+    margin-top: 0px !important;
+  }
+  #explorer {
+    position: fixed;
+    z-index: 1;
+    left: -700px;
+    top: 0;
+    max-width: 700px;
+    bottom: 0;
+    background-color: var(--light);
+    overflow: scroll;
+    transition: left 300ms ease-in;
+    & #explorer-ul {
+      padding: 16px;
+      line-height: 16px;
+      max-height: initial;
+    }
+  }
+}
+
 button#explorer {
   all: unset;
   background-color: transparent;
@@ -63,6 +124,7 @@ button#explorer {
       color: var(--dark);
       opacity: 0.75;
       pointer-events: all;
+      font-size: 14px;
     }
   }
 }
@@ -84,7 +146,7 @@ svg {
   & div > a {
     color: var(--secondary);
     font-family: var(--headerFont);
-    font-size: 0.95rem;
+    font-size: 14px;
     font-weight: 600;
     line-height: 1.5rem;
     display: inline-block;
@@ -107,7 +169,7 @@ svg {
     font-family: var(--headerFont);
 
     & p {
-      font-size: 0.95rem;
+      font-size: 14px;
       display: inline-block;
       color: var(--secondary);
       font-weight: 600;

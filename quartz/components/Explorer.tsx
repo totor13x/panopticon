@@ -1,10 +1,12 @@
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import explorerStyle from "./styles/explorer.scss"
-
+// import * as Component from "./quartz/components"
 // @ts-ignore
 import script from "./scripts/explorer.inline"
 import { ExplorerNode, FileNode, Options } from "./ExplorerNode"
 import { QuartzPluginData } from "../plugins/vfile"
+import MobileOnly from "./MobileOnly"
+import Darkmode, { DarkmodeComponent } from "./Darkmode"
 
 // Options interface defined in `ExplorerNode` to avoid circular dependency
 const defaultOptions = {
@@ -85,17 +87,29 @@ export default ((userOpts?: Partial<Options>) => {
 
   function Explorer({ allFiles, displayClass, fileData }: QuartzComponentProps) {
     constructFileTree(allFiles)
+    
     return (
-      <div class={`explorer ${displayClass ?? ""}`}>
-        <button
-          type="button"
-          id="explorer"
-          data-behavior={opts.folderClickBehavior}
-          data-collapsed={opts.folderDefaultState}
-          data-savestate={opts.useSavedState}
-          data-tree={jsonTree}
-        >
-          <h1>{opts.title}</h1>
+      <div class={`explorer ${displayClass ?? ""}`}
+        id="explorer"
+        data-behavior={opts.folderClickBehavior}
+        data-collapsed={opts.folderDefaultState}
+        data-savestate={opts.useSavedState}
+        data-tree={jsonTree}>
+        <div class="sidebar-head">
+          <button
+            type="button"
+            id="explorer-close"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              viewBox="0 0 50 50"
+              fill="currentColor"
+            >
+              <path d="M 40.783203 7.2714844 A 2.0002 2.0002 0 0 0 39.386719 7.8867188 L 25.050781 22.222656 L 10.714844 7.8867188 A 2.0002 2.0002 0 0 0 9.2792969 7.2792969 A 2.0002 2.0002 0 0 0 7.8867188 10.714844 L 22.222656 25.050781 L 7.8867188 39.386719 A 2.0002 2.0002 0 1 0 10.714844 42.214844 L 25.050781 27.878906 L 39.386719 42.214844 A 2.0002 2.0002 0 1 0 42.214844 39.386719 L 27.878906 25.050781 L 42.214844 10.714844 A 2.0002 2.0002 0 0 0 40.783203 7.2714844 z"></path>
+            </svg>
+            {/* <h1>{opts.title}</h1>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="14"
@@ -109,8 +123,10 @@ export default ((userOpts?: Partial<Options>) => {
             class="fold"
           >
             <polyline points="6 9 12 15 18 9"></polyline>
-          </svg>
-        </button>
+          </svg> */}
+          </button>
+          <DarkmodeComponent />
+        </div>
         <div id="explorer-content">
           <ul class="overflow" id="explorer-ul">
             <ExplorerNode node={fileTree} opts={opts} fileData={fileData} />

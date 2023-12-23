@@ -52,15 +52,15 @@ export const defaultContentPageLayout: PageLayout = {
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
-    Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer(explorerOptions)),
+    Component.Explorer(explorerOptions),
   ],
   right: [
+    Component.DesktopOnly(Component.Darkmode()),
     // Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.DesktopOnly(Component.Backlinks()),
     // TODO: Temporalily disable the explorer
-    Component.MobileOnly(Component.Explorer(explorerOptions)),
+    // Component.MobileOnly(Component.Explorer(explorerOptions)),
   ],
 }
 

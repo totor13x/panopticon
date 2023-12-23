@@ -23,6 +23,13 @@ function toggleExplorer(this: HTMLElement) {
   content.style.maxHeight = content.style.maxHeight === "0px" ? content.scrollHeight + "px" : "0px"
 }
 
+function toggleSidebar(this: HTMLElement) {
+  const explorer = document.getElementById("explorer")
+
+  if (explorer) {
+    explorer.style.left = explorer.style.left === '-700px' ? '0px' : '-700px'
+  }
+}
 function toggleFolder(evt: MouseEvent) {
   evt.stopPropagation()
 
@@ -95,6 +102,22 @@ function setupExplorer() {
     // Add click handler to main explorer
     explorer.removeEventListener("click", toggleExplorer)
     explorer.addEventListener("click", toggleExplorer)
+
+    const explorerClose = document.getElementById('explorer-close')
+
+    if (explorerClose) {
+      explorer.style.left = '-700px'
+      explorerClose.removeEventListener('click', toggleSidebar)
+      explorerClose.addEventListener('click', toggleSidebar)
+    }
+
+    Array.prototype.forEach.call(
+      document.getElementsByClassName('sidebar-open'),
+      function (item) {
+        item.removeEventListener('click', toggleSidebar)
+        item.addEventListener('click', toggleSidebar)
+      }
+    )
   }
 
   // Set up click handlers for each folder (click handler on folder "icon")
