@@ -1,3 +1,35 @@
+#explorer-content ul {
+  .node-explorer:not(.folder-title) {
+    position: relative;
+    line-height: 1.1rem;
+    margin-bottom: 0.5rem;
+
+    &:after {
+      transition: opacity 0.1s ease-in;
+      opacity: 0;
+      content: "";
+      background: var(--secondary);
+      /* height: 100%; */
+      width: 2px;
+      /* margin-bottom: 0.5rem; */
+      display: block;
+      position: absolute;
+      left: -10px;
+      top: 2px;
+      bottom: 2px;
+      border-radius: 4px;
+    }
+    &:hover:after {
+      opacity: 1 !important;
+    }
+    &.active:after {
+      opacity: 1 !important;
+      // add shadow like light
+      box-shadow: 0 0 9px 1px var(--secondary);
+    }
+  }
+}
+
 #explorer-close {
   background: none;
   margin: 0;
@@ -8,14 +40,50 @@
   cursor: pointer;
   display: none;
 }
-.head-title .sidebar-open, .sidebar-head .darkmode {
+
+.head-title .sidebar-open,
+.sidebar-head .darkmode {
   display: none;
 }
 
+
+.sidebar-overlay {
+  contain: layout;
+  z-index: 999;
+  backdrop-filter: blur(4px);
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  transition: all 300ms ease-in;
+  opacity: 0;
+  display: none;
+}
+
+.search>#search-container, .sidebar-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 @media (max-width: 1510px) {
+  .sidebar-overlay.active {
+    display: block;
+    opacity: 1;
+  }
+  .search>#search-icon>p, .search>#search-icon>div {
+    display: none;
+  }
+  .search {
+    min-width: max-content;
+    max-width: max-content;
+  }
+
   .sidebar-head {
     display: flex;
     justify-content: space-between;
+    
     & .darkmode {
       box-sizing: border-box;
       width: 60px;
@@ -23,37 +91,45 @@
       display: block;
       margin-top: 10px;
     }
+
     & .darkmode svg {
       width: 24px;
       height: 24px;
     }
+
     & .darkmode {
       padding: 16px;
       padding-bottom: 0px;
     }
   }
+
   #explorer-close {
     display: block;
   }
+
   .head-title {
     display: flex;
     align-items: center;
+
     & .sidebar-open {
       display: inline-flex;
       margin-right: 16px;
       width: 30px;
       cursor: pointer;
+
       & svg {
         width: 30px;
       }
     }
   }
+
   #explorer-content {
     margin-top: 0px !important;
   }
+
   #explorer {
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     left: -700px;
     top: 0;
     max-width: 700px;
@@ -61,6 +137,7 @@
     background-color: var(--light);
     overflow: scroll;
     transition: left 300ms ease-in;
+
     & #explorer-ul {
       padding: 16px;
       line-height: 16px;
@@ -107,7 +184,7 @@ button#explorer {
   grid-template-rows: 1fr;
 }
 
-.folder-outer > ul {
+.folder-outer>ul {
   overflow: hidden;
 }
 
@@ -118,7 +195,7 @@ button#explorer {
   transition: max-height 0.35s ease;
   margin-top: 0.5rem;
 
-  &.collapsed > .overflow::after {
+  &.collapsed>.overflow::after {
     opacity: 0;
   }
 
@@ -130,7 +207,8 @@ button#explorer {
       max-height 0.35s ease,
       transform 0.35s ease,
       opacity 0.2s ease;
-    & li > a {
+
+    & li>a {
       color: var(--dark);
       opacity: 0.75;
       pointer-events: all;
@@ -142,7 +220,7 @@ button#explorer {
 svg {
   pointer-events: all;
 
-  & > polyline {
+  &>polyline {
     pointer-events: none;
   }
 }
@@ -153,7 +231,7 @@ svg {
   align-items: center;
   user-select: none;
 
-  & div > a {
+  & div>a {
     color: var(--secondary);
     font-family: var(--headerFont);
     font-size: 14px;
@@ -162,11 +240,11 @@ svg {
     display: inline-block;
   }
 
-  & div > a:hover {
+  & div>a:hover {
     color: var(--tertiary);
   }
 
-  & div > button {
+  & div>button {
     color: var(--dark);
     background-color: transparent;
     border: none;
@@ -196,9 +274,12 @@ svg {
   cursor: pointer;
   transition: transform 0.3s ease;
   backface-visibility: visible;
+
+  padding: 8px;
+  border-radius: 4px;
 }
 
-div:has(> .folder-outer:not(.open)) > .folder-container > svg {
+div:has(> .folder-outer:not(.open))>.folder-container>svg {
   transform: rotate(-90deg);
 }
 

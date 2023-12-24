@@ -157,7 +157,7 @@ export function ExplorerNode({ node, opts, fullPath, fileData }: ExplorerNodePro
     <li>
       {node.file ? (
         // Single file node
-        <li key={node.file.slug}>
+        <li key={node.file.slug} class="node-explorer" data-path={node.file.slug}>
           <a href={resolveRelative(fileData.slug!, node.file.slug!)} data-for={node.file.slug}>
             {node.displayName}
           </a>
@@ -167,7 +167,7 @@ export function ExplorerNode({ node, opts, fullPath, fileData }: ExplorerNodePro
           {node.name !== "" && (
             // Node with entire folder
             // Render svg button + folder name, then children
-            <div class="folder-container">
+            <div class="folder-container" style="margin-left: -1.4rem">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
@@ -184,15 +184,15 @@ export function ExplorerNode({ node, opts, fullPath, fileData }: ExplorerNodePro
               </svg>
               {/* render <a> tag if folderBehavior is "link", otherwise render <button> with collapse click event */}
               <div key={node.name} data-folderpath={folderPath}>
-                {folderBehavior === "link" ? (
+                {/* {folderBehavior === "link" ? ( */}
                   <a href={`${folderPath}`} data-for={node.name} class="folder-title">
                     {node.displayName}
                   </a>
-                ) : (
-                  <button class="folder-button">
-                    <p class="folder-title">{node.displayName}</p>
-                  </button>
-                )}
+                {/* // ) : (
+                //   <button class="folder-button">
+                //     <p class="folder-title">{node.displayName}</p>
+                //   </button>
+                // )} */}
               </div>
             </div>
           )}
@@ -201,7 +201,7 @@ export function ExplorerNode({ node, opts, fullPath, fileData }: ExplorerNodePro
             <ul
               // Inline style for left folder paddings
               style={{
-                paddingLeft: node.name !== "" ? "1.4rem" : "0",
+                paddingLeft: node.name !== "" ? "1.4rem" : "1rem",
               }}
               class="content"
               data-folderul={folderPath}

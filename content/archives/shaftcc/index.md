@@ -1,6 +1,7 @@
 ---
 title: Архив Shaft.CC, 01.2020 - 05.2021
 ---
+
 # Описание
 
 Shaft.CC - комплекс игровых режимов, работающих на базе игры Garry`s mod. Проект стартовал в 01.12.2017 и был в эксплуатации до 01.08.2021. Весь исходный код доступен на github.com, исключая некоторую часть логики экосистемы, и предоставляется "КАК ЕСТЬ" под лицензией GNU GPL.
@@ -11,27 +12,27 @@ Shaft.CC - комплекс игровых режимов, работающих 
 
 Развитие проекта автором не предполагается, весь исходный код размещен "как есть". Если будут обнаружены какие\-то ошибки или уязвимости \- рекомендуется создать Pull request и исправить это.** Нет никаких гарантий, что фреймворк или логика кода не содержит багов кода или уязвимостей \- используйте на свой страх и риск!**
 
-**Бекенд**\- Laravel 7 [totor13x/shaft-cc-backend](https://github.com/totor13x/shaft-cc-backend)
+**Бекенд** \- Laravel 7 [totor13x/shaft-cc-backend](https://github.com/totor13x/shaft-cc-backend)
 
-**Фронтенд**\- NuxtJS [totor13x/shaft-cc-frontend](https://github.com/totor13x/shaft-cc-frontend)
+**Фронтенд** \- NuxtJS [totor13x/shaft-cc-frontend](https://github.com/totor13x/shaft-cc-frontend)
 
-**Websocket сервер**\- AdonisJS 4 [totor13x/shaft-cc-wsserver](https://github.com/totor13x/shaft-cc-wsserver)
+**Websocket сервер** \- AdonisJS 4 [totor13x/shaft-cc-wsserver](https://github.com/totor13x/shaft-cc-wsserver)
 
-**Сборка сервера в докере**- [totor13x/shaft-cc-gmod-docker](https://github.com/totor13x/shaft-cc-gmod-docker)
+**Сборка сервера в докере** - [totor13x/shaft-cc-gmod-docker](https://github.com/totor13x/shaft-cc-gmod-docker)
 
-**Режим Deathrun**\- За основу взят режим [arizard/deathrun](https://github.com/Arizard/deathrun), разрешено [пользоваться картами](#deathrun-maps)
+**Режим Deathrun** \- За основу взят режим [arizard/deathrun](https://github.com/Arizard/deathrun), разрешено [пользоваться картами](#deathrun-карты)
 
-**Режим Murder**\- написан в 2017 [totor13x/shaft-cc-gmod-murder](https://github.com/totor13x/shaft-cc-gmod-murder) рабочий режим, много мусора в коде и сильно отличается от оригинального мардера
+**Режим Murder** \- написан в 2017 [totor13x/shaft-cc-gmod-murder](https://github.com/totor13x/shaft-cc-gmod-murder) рабочий режим, много мусора в коде и сильно отличается от оригинального мардера
 
-**Режим Prophunt**\- написан в 2017 [totor13x/shaft-cc-gmod-prophunt](https://github.com/totor13x/shaft-cc-gmod-prophunt) рабочий режим, отличается от оригинального пропханта более удобным управлением пропом и хантером
+**Режим Prophunt** \- написан в 2017 [totor13x/shaft-cc-gmod-prophunt](https://github.com/totor13x/shaft-cc-gmod-prophunt) рабочий режим, отличается от оригинального пропханта более удобным управлением пропом и хантером
 
-**Режим Star Wars RP**\- написан в 2019 [totor13x/shaft-cc-gmod-starwarsrp](https://github.com/totor13x/shaft-cc-gmod-starwarsrp) основная идея \- иммерсивное управление, минусы: не сильно модульный, то есть заточен именно под Star Wars RP
+**Режим Star Wars RP** \- написан в 2019 [totor13x/shaft-cc-gmod-starwarsrp](https://github.com/totor13x/shaft-cc-gmod-starwarsrp) основная идея \- иммерсивное управление, минусы: не сильно модульный, то есть заточен именно под Star Wars RP
 
-**Режим YandereRP**\- сборка maxmol [totor13x/shaft-cc-gmod-yandererp](https://github.com/totor13x/shaft-cc-gmod-yandererp) преставляет собой дамп после покупки, лучше к нему подходить с определенными знаниями в lua
+**Режим YandereRP** \- сборка maxmol [totor13x/shaft-cc-gmod-yandererp](https://github.com/totor13x/shaft-cc-gmod-yandererp) преставляет собой дамп после покупки, лучше к нему подходить с определенными знаниями в lua
 
-**Режим Minigames**\- написан в 2016 [totor13x/shaft-cc-gmod-minigames](https://github.com/totor13x/shaft-cc-gmod-minigames) остался на уровне концепции, никаких уникальных особенностей, просто набор скриптов
+**Режим Minigames** \- написан в 2016 [totor13x/shaft-cc-gmod-minigames](https://github.com/totor13x/shaft-cc-gmod-minigames) остался на уровне концепции, никаких уникальных особенностей, просто набор скриптов
 
-**Режим Cinema**\- написан в 2018 [totor13x/shaft-cc-gmod-cinema](https://github.com/totor13x/shaft-cc-gmod-cinema) раньше был актуален, много разных сервисов. Главное отличие \- возможность просмотра сериалов, ночной клуб, и возможность развивать мини-игры внутри режима
+**Режим Cinema** \- написан в 2018 [totor13x/shaft-cc-gmod-cinema](https://github.com/totor13x/shaft-cc-gmod-cinema) раньше был актуален, много разных сервисов. Главное отличие \- возможность просмотра сериалов, ночной клуб, и возможность развивать мини-игры внутри режима
 
 # Статистика за все время
 

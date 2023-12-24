@@ -59,6 +59,8 @@ async function navigate(url: URL, isBack: boolean = false) {
   announcer.dataset.persist = ""
   html.body.appendChild(announcer)
 
+
+  // console.log()
   // morph body
   micromorph(document.body, html.body)
 
@@ -85,6 +87,19 @@ async function navigate(url: URL, isBack: boolean = false) {
   }
   notifyNav(getFullSlug(window))
   delete announcer.dataset.persist
+
+
+  const currentPath = document.body.dataset.slug
+
+  Array.prototype.forEach.call(
+    document.getElementsByClassName("node-explorer"),
+    function (item) {
+      item.classList.remove('active')
+    },
+  )
+
+  const query = document.querySelector(`.node-explorer[data-path^="${currentPath}"]`)
+  query?.classList.add("active")
 }
 
 window.spaNavigate = navigate
@@ -129,6 +144,10 @@ function createRouter() {
     }
   })()
 }
+
+const currentPath = document.body.dataset.slug
+const query = document.querySelector(`.node-explorer[data-path^="${currentPath}"]`)
+query?.classList.add("active")
 
 createRouter()
 notifyNav(getFullSlug(window))

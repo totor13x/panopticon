@@ -25,9 +25,29 @@ function toggleExplorer(this: HTMLElement) {
 
 function toggleSidebar(this: HTMLElement) {
   const explorer = document.getElementById("explorer")
+  // const overlay = document.getElementBy('sidebar-overlay')
 
   if (explorer) {
-    explorer.style.left = explorer.style.left === '-700px' ? '0px' : '-700px'
+    if (explorer.style.left === '0px') {
+      explorer.style.left = '-700px'
+      
+      Array.prototype.forEach.call(
+        document.getElementsByClassName("sidebar-overlay"),
+        function (item) {
+          item.classList.remove('active')
+        },
+      )
+    } else {
+      explorer.style.left = '0px'
+
+      Array.prototype.forEach.call(
+        document.getElementsByClassName("sidebar-overlay"),
+        function (item) {
+          item.classList.add('active')
+        },
+      )
+    }
+    // explorer.style.left = explorer.style.left === '-700px' ? '0px' : '-700px'
   }
 }
 function toggleFolder(evt: MouseEvent) {
@@ -113,6 +133,13 @@ function setupExplorer() {
 
     Array.prototype.forEach.call(
       document.getElementsByClassName('sidebar-open'),
+      function (item) {
+        item.removeEventListener('click', toggleSidebar)
+        item.addEventListener('click', toggleSidebar)
+      }
+    )
+    Array.prototype.forEach.call(
+      document.getElementsByClassName('sidebar-overlay'),
       function (item) {
         item.removeEventListener('click', toggleSidebar)
         item.addEventListener('click', toggleSidebar)
