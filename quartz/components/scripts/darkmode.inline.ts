@@ -1,32 +1,42 @@
 const userPref = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"
-const currentTheme = localStorage.getItem("theme") ?? userPref
+const currentTheme = localStorage.getItem("theme") ?? 'auto'
+
+document.documentElement.setAttribute("current-theme", currentTheme)
 document.documentElement.setAttribute("saved-theme", currentTheme)
 
 document.addEventListener("nav", () => {
   const switchTheme = (e: any) => {
-    if (e.target.checked) {
-      document.documentElement.setAttribute("saved-theme", "dark")
-      localStorage.setItem("theme", "dark")
-    } else {
-      document.documentElement.setAttribute("saved-theme", "light")
-      localStorage.setItem("theme", "light")
+    const nextColor = e.currentTarget.dataset.next
+    
+    document.documentElement.setAttribute("current-theme", nextColor)
+    document.documentElement.setAttribute("saved-theme", nextColor)
+    localStorage.setItem("theme", nextColor)
+
+    if (nextColor === "auto") {
+      const currentUserPref = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"
+      
+      document.documentElement.setAttribute("current-theme", currentUserPref)
     }
   }
 
-  // Darkmode toggle
-  const toggleSwitch = document.querySelector("#darkmode-toggle") as HTMLInputElement
-  toggleSwitch.removeEventListener("change", switchTheme)
-  toggleSwitch.addEventListener("change", switchTheme)
-  if (currentTheme === "dark") {
-    toggleSwitch.checked = true
+  Array.prototype.forEach.call(
+    document.querySelectorAll(".darkmode-toggle"),
+    function (item: HTMLElement) {
+      item.removeEventListener('click', switchTheme)
+      item.addEventListener('click', switchTheme, false)
+    },
+  )
+
+  if (currentTheme === "auto") {
+    document.documentElement.setAttribute("current-theme", userPref)
   }
 
-  // Listen for changes in prefers-color-scheme
   const colorSchemeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)")
   colorSchemeMediaQuery.addEventListener("change", (e) => {
+    const currentTheme = localStorage.getItem("theme") ?? 'auto'
     const newTheme = e.matches ? "dark" : "light"
-    document.documentElement.setAttribute("saved-theme", newTheme)
-    localStorage.setItem("theme", newTheme)
-    toggleSwitch.checked = e.matches
+    if (currentTheme === "auto") {
+      document.documentElement.setAttribute("current-theme", newTheme)
+    }
   })
 })

@@ -498,7 +498,7 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options> 
         js.push({
           script: `
           import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
-          const darkMode = document.documentElement.getAttribute('saved-theme') === 'dark'
+          const darkMode = document.documentElement.getAttribute('current-theme') === 'dark'
           mermaid.initialize({
             startOnLoad: false,
             securityLevel: 'loose',

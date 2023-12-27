@@ -49,7 +49,7 @@ ${stylesheet.join("\n\n")}
   --codeFont: "${theme.typography.code}", ${DEFAULT_MONO};
 }
 
-:root[saved-theme="dark"] {
+:root[current-theme="dark"] {
   --light: ${theme.colors.darkMode.light};
   --lightgray: ${theme.colors.darkMode.lightgray};
   --gray: ${theme.colors.darkMode.gray};
