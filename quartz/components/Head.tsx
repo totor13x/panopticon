@@ -31,7 +31,7 @@ export default (() => {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         {css.map((href) => (
-          <link key={href} href={href} rel="stylesheet" type="text/css" spa-preserve />
+          <link key={href} href={href} rel="stylesheet" type="text/css" spa-preserve="true" />
         ))}
         {js
           .filter((resource) => resource.loadTime === "beforeDOMReady")

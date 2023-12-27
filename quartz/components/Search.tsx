@@ -6,7 +6,7 @@ import script from "./scripts/search.inline"
 export default (() => {
   function Search({ displayClass }: QuartzComponentProps) {
     return (
-      <div class={`search ${displayClass ?? ""}`}>
+      <div className={`search ${displayClass ?? ""}`}>
         <div id="search-icon">
           <p>Search</p>
           <div></div>
@@ -19,8 +19,8 @@ export default (() => {
           >
             <title id="title">Search</title>
             <desc id="desc">Search</desc>
-            <g class="search-path" fill="none">
-              <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4" />
+            <g className="search-path" fill="none">
+              <path strokeLinecap="square" d="M18.5 18.3l-5.4-5.4" />
               <circle cx="8" cy="8" r="7" />
             </g>
           </svg>
@@ -28,7 +28,7 @@ export default (() => {
         <div id="search-container">
           <div id="search-space">
             <input
-              autocomplete="off"
+              autoComplete="off"
               id="search-bar"
               name="search"
               type="text"

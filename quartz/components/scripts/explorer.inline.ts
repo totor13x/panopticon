@@ -190,7 +190,7 @@ document.addEventListener("nav", () => {
 
 /**
  * Toggles the state of a given folder
- * @param folderElement <div class="folder-outer"> Element of folder (parent)
+ * @param folderElement <div className="folder-outer"> Element of folder (parent)
  * @param collapsed if folder should be set to collapsed or not
  */
 function setFolderState(folderElement: HTMLElement, collapsed: boolean) {

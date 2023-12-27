@@ -1,5 +1,5 @@
 import { randomUUID } from "crypto"
-import { JSX } from "preact/jsx-runtime"
+import { ReactElement } from "react"
 
 export type JSResource = {
   loadTime: "beforeDOMReady" | "afterDOMReady"
@@ -16,19 +16,17 @@ export type JSResource = {
     }
 )
 
-export function JSResourceToScriptElement(resource: JSResource, preserve?: boolean): JSX.Element {
+export function JSResourceToScriptElement(resource: JSResource, preserve?: boolean): ReactElement {
   const scriptType = resource.moduleType ?? "application/javascript"
   const spaPreserve = preserve ?? resource.spaPreserve
   if (resource.contentType === "external") {
     return (
-      <script key={resource.src} src={resource.src} type={scriptType} spa-preserve={spaPreserve} />
+      <script key={resource.src} src={resource.src} type={scriptType} />
     )
   } else {
     const content = resource.script
     return (
-      <script key={randomUUID()} type={scriptType} spa-preserve={spaPreserve}>
-        {content}
-      </script>
+      <script key={randomUUID()} type={scriptType} dangerouslySetInnerHTML={{ __html: content }} />
     )
   }
 }

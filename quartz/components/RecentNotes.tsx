@@ -28,33 +28,33 @@ export default ((userOpts?: Partial<Options>) => {
     const pages = allFiles.filter(opts.filter).sort(opts.sort)
     const remaining = Math.max(0, pages.length - opts.limit)
     return (
-      <div class={`recent-notes ${displayClass ?? ""}`}>
+      <div className={`recent-notes ${displayClass ?? ""}`}>
         <h3>{opts.title}</h3>
-        <ul class="recent-ul">
+        <ul className="recent-ul">
           {pages.slice(0, opts.limit).map((page) => {
             const title = page.frontmatter?.title
             const tags = page.frontmatter?.tags ?? []
 
             return (
-              <li class="recent-li">
-                <div class="section">
-                  <div class="desc">
+              <li className="recent-li">
+                <div className="section">
+                  <div className="desc">
                     <h3>
-                      <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
+                      <a href={resolveRelative(fileData.slug!, page.slug!)} className="internal">
                         {title}
                       </a>
                     </h3>
                   </div>
                   {page.dates && (
-                    <p class="meta">
+                    <p className="meta">
                       <Date date={getDate(cfg, page)!} />
                     </p>
                   )}
-                  <ul class="tags">
+                  <ul className="tags">
                     {tags.map((tag) => (
                       <li>
                         <a
-                          class="internal tag-link"
+                          className="internal tag-link"
                           href={resolveRelative(fileData.slug!, `tags/${tag}` as FullSlug)}
                         >
                           #{tag}

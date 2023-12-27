@@ -6,13 +6,13 @@ function Backlinks({ fileData, allFiles, displayClass }: QuartzComponentProps) {
   const slug = simplifySlug(fileData.slug!)
   const backlinkFiles = allFiles.filter((file) => file.links?.includes(slug))
   return (
-    <div class={`backlinks ${displayClass ?? ""}`}>
+    <div className={`backlinks ${displayClass ?? ""}`}>
       <h3>Backlinks</h3>
-      <ul class="overflow">
+      <ul className="overflow">
         {backlinkFiles.length > 0 ? (
           backlinkFiles.map((f) => (
-            <li>
-              <a href={resolveRelative(fileData.slug!, f.slug!)} class="internal">
+            <li key={resolveRelative(fileData.slug!, f.slug!)}>
+              <a href={resolveRelative(fileData.slug!, f.slug!)} className="internal">
                 {f.frontmatter?.title}
               </a>
             </li>

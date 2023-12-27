@@ -90,14 +90,14 @@ export default ((userOpts?: Partial<Options>) => {
 
     return (
       <>
-        <div class="sidebar-overlay"></div>
-        <div class={`explorer ${displayClass ?? ""}`}
+        <div className="sidebar-overlay"></div>
+        <div className={`explorer ${displayClass ?? ""}`}
           id="explorer"
           data-behavior={opts.folderClickBehavior}
           data-collapsed={opts.folderDefaultState}
           data-savestate={opts.useSavedState}
           data-tree={jsonTree}>
-          <div class="sidebar-head">
+          <div className="sidebar-head">
             <button
               type="button"
               id="explorer-close"
@@ -122,7 +122,7 @@ export default ((userOpts?: Partial<Options>) => {
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="fold"
+              className="fold"
             >
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg> */}
@@ -130,7 +130,7 @@ export default ((userOpts?: Partial<Options>) => {
             <DarkmodeComponent />
           </div>
           <div id="explorer-content">
-            <ul class="overflow" id="explorer-ul">
+            <ul className="overflow" id="explorer-ul">
               <ExplorerNode node={fileTree} opts={opts} fileData={fileData} />
               <li id="explorer-end" />
             </ul>

@@ -27,13 +27,13 @@ function FolderContent(props: QuartzComponentProps) {
 
   const content =
     (tree as Root).children.length === 0
-      ? fileData.description
-      : htmlToJsx(fileData.filePath!, tree)
+      ? fileData.description as string
+      : htmlToJsx(fileData.filePath!, tree) as TrustedHTML
 
   return (
-    <div class="popover-hint">
+    <div className="popover-hint">
       <article>
-        <p>{content}</p>
+        <p dangerouslySetInnerHTML={{ __html: content }} />
       </article>
       <p>{pluralize(allPagesInFolder.length, "item")} under this folder.</p>
       <div>

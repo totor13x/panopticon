@@ -1,7 +1,7 @@
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 function Spacer({ displayClass }: QuartzComponentProps) {
-  return <div class={`spacer ${displayClass ?? ""}`}></div>
+  return <div className={`spacer ${displayClass ?? ""}`}></div>
 }
 
 export default (() => Spacer) satisfies QuartzComponentConstructor

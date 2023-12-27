@@ -1,14 +1,14 @@
-import { toJsxRuntime } from "hast-util-to-jsx-runtime"
+import { toHtml } from "hast-util-to-html"
 import { QuartzPluginData } from "../plugins/vfile"
 import { Node, Root } from "hast"
-import { Fragment, jsx, jsxs } from "preact/jsx-runtime"
 import { trace } from "./trace"
 import { type FilePath } from "./path"
+import React from 'react'
 
 export function htmlToJsx(fp: FilePath, tree: Node<QuartzPluginData>) {
   try {
-    // @ts-ignore (preact makes it angry)
-    return toJsxRuntime(tree as Root, { Fragment, jsx, jsxs, elementAttributeNameCase: "html" })
+    const htmlString = toHtml(tree as Root, { space: "html" })
+    return htmlString
   } catch (e) {
     trace(`Failed to parse Markdown in \`${fp}\` into JSX`, e as Error)
   }
