@@ -56,9 +56,9 @@ export default ((opts?: GraphOptions) => {
     const localGraph = { ...defaultOptions.localGraph, ...opts?.localGraph }
     const globalGraph = { ...defaultOptions.globalGraph, ...opts?.globalGraph }
     return (
-      <div className={`graph ${displayClass ?? ""}`}>
+      <div class={`graph ${displayClass ?? ""}`}>
         <h3>Graph View</h3>
-        <div className="graph-outer">
+        <div class="graph-outer">
           <div id="graph-container" data-cfg={JSON.stringify(localGraph)}></div>
           <svg
             version="1.1"

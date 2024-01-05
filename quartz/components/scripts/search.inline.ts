@@ -59,7 +59,7 @@ function highlight(searchTerm: string, text: string, trim?: boolean) {
       for (const searchTok of tokenizedTerms) {
         if (tok.toLowerCase().includes(searchTok.toLowerCase())) {
           const regex = new RegExp(searchTok.toLowerCase(), "gi")
-          return tok.replace(regex, `<span className="highlight">$&</span>`)
+          return tok.replace(regex, `<span class="highlight">$&</span>`)
         }
       }
       return tok
@@ -201,7 +201,7 @@ document.addEventListener("nav", async (e: unknown) => {
         let difference = tags.filter((x) => !matching.includes(x))
 
         // Convert to html (cant be done later as matches/term dont get passed to `resultToHTML`)
-        matching = matching.map((tag) => `<li><p className="match-tag">#${tag}</p></li>`)
+        matching = matching.map((tag) => `<li><p class="match-tag">#${tag}</p></li>`)
         difference = difference.map((tag) => `<li><p>#${tag}</p></li>`)
         matching.push(...difference)
       }
@@ -236,7 +236,7 @@ document.addEventListener("nav", async (e: unknown) => {
 
     removeAllChildren(results)
     if (finalResults.length === 0) {
-      results.innerHTML = `<button className="result-card">
+      results.innerHTML = `<button class="result-card">
                     <h3>No results.</h3>
                     <p>Try another search term?</p>
                 </button>`

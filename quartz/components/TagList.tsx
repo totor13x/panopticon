@@ -6,13 +6,13 @@ function TagList({ fileData, displayClass }: QuartzComponentProps) {
   const baseDir = pathToRoot(fileData.slug!)
   if (tags && tags.length > 0) {
     return (
-      <ul className={`tags ${displayClass ?? ""}`}>
+      <ul class={`tags ${displayClass ?? ""}`}>
         {tags.map((tag) => {
           const display = `#${tag}`
           const linkDest = baseDir + `/tags/${slugTag(tag)}`
           return (
-            <li key={slugTag(tag)}>
-              <a href={linkDest} className="internal tag-link">
+            <li>
+              <a href={linkDest} class="internal tag-link">
                 {display}
               </a>
             </li>

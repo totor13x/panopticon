@@ -24,8 +24,8 @@ function TagContent(props: QuartzComponentProps) {
 
   const content =
     (tree as Root).children.length === 0
-      ? fileData.description as string
-      : htmlToJsx(fileData.filePath!, tree) as TrustedHTML
+      ? fileData.description
+      : htmlToJsx(fileData.filePath!, tree)
 
   if (tag === "") {
     const tags = [...new Set(allFiles.flatMap((data) => data.frontmatter?.tags ?? []))]
@@ -35,9 +35,9 @@ function TagContent(props: QuartzComponentProps) {
     }
 
     return (
-      <div className="popover-hint">
+      <div class="popover-hint">
         <article>
-          <p dangerouslySetInnerHTML={{ __html: content }} />
+          <p>{content}</p>
         </article>
         <p>Found {tags.length} total tags.</p>
         <div>
@@ -53,7 +53,7 @@ function TagContent(props: QuartzComponentProps) {
             return (
               <div>
                 <h2>
-                  <a className="internal tag-link" href={`./${tag}`}>
+                  <a class="internal tag-link" href={`./${tag}`}>
                     #{tag}
                   </a>
                 </h2>
@@ -77,7 +77,7 @@ function TagContent(props: QuartzComponentProps) {
     }
 
     return (
-      <div className="popover-hint">
+      <div class="popover-hint">
         <article>{content}</article>
         <p>{pluralize(pages.length, "item")} with this tag.</p>
         <div>

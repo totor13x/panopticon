@@ -36,31 +36,31 @@ export function PageList({ cfg, fileData, allFiles, limit }: Props) {
   }
 
   return (
-    <ul className="section-ul">
+    <ul class="section-ul">
       {list.map((page) => {
         const title = page.frontmatter?.title
         const tags = page.frontmatter?.tags ?? []
 
         return (
-          <li key={`${fileData.slug}-${tags.join(',')}`} className="section-li">
-            <div className="section">
+          <li class="section-li">
+            <div class="section">
               {page.dates && (
-                <p className="meta">
+                <p class="meta">
                   <Date date={getDate(cfg, page)!} />
                 </p>
               )}
-              <div className="desc">
+              <div class="desc">
                 <h3>
-                  <a href={resolveRelative(fileData.slug!, page.slug!)} className="internal">
+                  <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
                     {title}
                   </a>
                 </h3>
               </div>
-              <ul className="tags">
+              <ul class="tags">
                 {tags.map((tag) => (
-                  <li key={`${fileData.slug}-${tag}`}>
+                  <li>
                     <a
-                      className="internal tag-link"
+                      class="internal tag-link"
                       href={resolveRelative(fileData.slug!, `tags/${tag}` as FullSlug)}
                     >
                       #{tag}

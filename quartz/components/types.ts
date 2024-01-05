@@ -1,4 +1,4 @@
-import { ComponentType, ReactNode } from "react"
+import { ComponentType, JSX } from "preact"
 import { StaticResources } from "../util/resources"
 import { QuartzPluginData } from "../plugins/vfile"
 import { GlobalConfiguration } from "../cfg"
@@ -8,11 +8,11 @@ export type QuartzComponentProps = {
   externalResources: StaticResources
   fileData: QuartzPluginData
   cfg: GlobalConfiguration
-  children: (QuartzComponent | ReactNode)[]
+  children: (QuartzComponent | JSX.Element)[]
   tree: Node<QuartzPluginData>
   allFiles: QuartzPluginData[]
   displayClass?: "mobile-only" | "desktop-only"
-} & React.HTMLAttributes<HTMLElement> & {
+} & JSX.IntrinsicAttributes & {
     [key: string]: any
   }
 

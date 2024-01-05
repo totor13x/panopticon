@@ -1,5 +1,4 @@
-// import { render } from "preact-render-to-string"
-import ReactDOMServer from 'react-dom/server';
+import { render } from "preact-render-to-string"
 import { QuartzComponent, QuartzComponentProps } from "./types"
 import HeaderConstructor from "./Header"
 import BodyConstructor from "./Body"
@@ -66,7 +65,7 @@ export function renderPage(
         const blockRef = node.properties!.dataBlock as string
 
         // TODO: avoid this expensive find operation and construct an index ahead of time
-        let blockNode = componentData.allFiles.find((f: any) => f.slug === blockSlug)?.blocks?.[blockRef]
+        let blockNode = componentData.allFiles.find((f) => f.slug === blockSlug)?.blocks?.[blockRef]
         if (blockNode) {
           if (blockNode.tagName === "li") {
             blockNode = {
@@ -103,7 +102,7 @@ export function renderPage(
   const Body = BodyConstructor()
 
   const LeftComponent = (
-    <div className="left sidebar">
+    <div class="left sidebar">
       {left.map((BodyComponent) => (
         <BodyComponent {...componentData} />
       ))}
@@ -111,7 +110,7 @@ export function renderPage(
   )
 
   const RightComponent = (
-    <div className="right sidebar">
+    <div class="right sidebar">
       {right.map((BodyComponent) => (
         <BodyComponent {...componentData} />
       ))}
@@ -122,17 +121,17 @@ export function renderPage(
     <html>
       <Head {...componentData} />
       <body data-slug={slug}>
-        <div id="quartz-root" className="page">
+        <div id="quartz-root" class="page">
           <Body {...componentData}>
             {LeftComponent}
-            <div className="center">
-              <div className="page-header">
+            <div class="center">
+              <div class="page-header">
                 <Header {...componentData}>
                   {header.map((HeaderComponent) => (
                     <HeaderComponent {...componentData} />
                   ))}
                 </Header>
-                <div className="popover-hint">
+                <div class="popover-hint">
                   {beforeBody.map((BodyComponent) => (
                     <BodyComponent {...componentData} />
                   ))}
@@ -151,5 +150,5 @@ export function renderPage(
     </html>
   )
 
-  return "<!DOCTYPE html>\n" + ReactDOMServer.renderToString(doc)
+  return "<!DOCTYPE html>\n" + render(doc)
 }

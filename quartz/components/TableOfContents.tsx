@@ -19,7 +19,7 @@ function TableOfContents({ fileData, displayClass }: QuartzComponentProps) {
   }
 
   return (
-    <div className={`toc ${displayClass ?? ""}`}>
+    <div class={`toc ${displayClass ?? ""}`}>
       <button type="button" id="toc">
         <h3>Table of Contents</h3>
         <svg
@@ -29,18 +29,18 @@ function TableOfContents({ fileData, displayClass }: QuartzComponentProps) {
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="fold"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="fold"
         >
           <polyline points="6 9 12 15 18 9"></polyline>
         </svg>
       </button>
       <div id="toc-content">
-        <ul className="overflow">
+        <ul class="overflow">
           {fileData.toc.map((tocEntry) => (
-            <li key={tocEntry.slug} className={`depth-${tocEntry.depth}`}>
+            <li key={tocEntry.slug} class={`depth-${tocEntry.depth}`}>
               <a href={`#${tocEntry.slug}`} data-for={tocEntry.slug}>
                 {tocEntry.text}
               </a>
@@ -66,7 +66,7 @@ function LegacyTableOfContents({ fileData }: QuartzComponentProps) {
       </summary>
       <ul>
         {fileData.toc.map((tocEntry) => (
-          <li key={tocEntry.slug} className={`depth-${tocEntry.depth}`}>
+          <li key={tocEntry.slug} class={`depth-${tocEntry.depth}`}>
             <a href={`#${tocEntry.slug}`} data-for={tocEntry.slug}>
               {tocEntry.text}
             </a>
