@@ -6,7 +6,7 @@ tags: [shaftcc, lidisu]
 Последние мои коммиты по проекту были в середине 2022, на текущий момент прошло полтора года. В целом это повод рарссказать о том, что это вообще такое было и для чего было нужно.
 
 <div style="display: flex;justify-content: center;align-content: center;">
-<img src="https://digital-garden.website.yandexcloud.net/images/pro-workshop-worker/85f748fd-ba95-4c5b-bc2b-fdf9444d486d.png" style="max-width: 450px;">
+<img src="https://digital-garden.website.yandexcloud.net/images/pro-workshop-worker/85f748fd-ba95-4c5b-bc2b-fdf9444d486d.png" style="max-width: 450px;width: 100%;">
 </div>
 
 ## Что это такое
@@ -18,7 +18,7 @@ tags: [shaftcc, lidisu]
 Плюсы автоматической системы достаточно очевидны - снизить количество путаницы, удаление какие-то устаревших ассетов, быстрое добавление/удаление или хотфиксы текстур. Я очень не любил заниматься контентом, поэтому практически всю работу выполнял Женя. Мне кажется, что в последствии он преисполнился в познании этой нелегкой работы - 4 года умственного насилия, по сути свою работу он выполнял отлично.
 
 <div style="display: flex;justify-content: center;align-content: center;">
-<img src="https://digital-garden.website.yandexcloud.net/images/pro-workshop-worker/ede06fcf-39a3-4fcc-bcd7-0620fb6dc77d.png" style="max-width: 500px;">
+<img src="https://digital-garden.website.yandexcloud.net/images/pro-workshop-worker/ede06fcf-39a3-4fcc-bcd7-0620fb6dc77d.png" style="max-width: 500px;width: 100%;">
 </div>
 <div style="text-align:center"><i>Этот парень был из тех, кто просто любит жизнь.</i></div>
 
@@ -26,13 +26,13 @@ tags: [shaftcc, lidisu]
 
 
 <div style="display: flex;justify-content: center;align-content: center;">
-<img src="https://digital-garden.website.yandexcloud.net/images/pro-workshop-worker/4bbbf9e9-0f62-4302-ae6b-7dd33994f514.png" style="max-width: 450px;">
+<img src="https://digital-garden.website.yandexcloud.net/images/pro-workshop-worker/4bbbf9e9-0f62-4302-ae6b-7dd33994f514.png" style="max-width: 450px;width: 100%;">
 </div>
 <div style="text-align:center"><i>Тюф №1</i></div>
 
 
 <div style="display: flex;justify-content: center;align-content: center;">
-<img src="https://digital-garden.website.yandexcloud.net/images/pro-workshop-worker/8a6f6390-f3d8-4f16-a2d8-c86d458c7157.png" style="max-width: 450px;">
+<img src="https://digital-garden.website.yandexcloud.net/images/pro-workshop-worker/8a6f6390-f3d8-4f16-a2d8-c86d458c7157.png" style="max-width: 450px;width: 100%;">
 </div>
 <div style="text-align:center"><i>Тюф №2</i></div>
 
@@ -46,7 +46,7 @@ tags: [shaftcc, lidisu]
 
 
 <div style="display: flex;justify-content: center;align-content: center;">
-<img src="https://digital-garden.website.yandexcloud.net/images/pro-workshop-worker/e5094702-49f2-49f3-a75c-caf593182b28.png" style="max-width: 450px;">
+<img src="https://digital-garden.website.yandexcloud.net/images/pro-workshop-worker/e5094702-49f2-49f3-a75c-caf593182b28.png" style="max-width: 450px;width: 100%;">
 </div>
 <div style="text-align:center"><i>Такая рутина, я хз как он выдержал всю эту историю</i></div>
 
