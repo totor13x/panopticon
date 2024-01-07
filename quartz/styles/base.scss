@@ -7,7 +7,7 @@ html {
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
   overflow-x: hidden;
-  width: 100vw;
+  width: 100%;
 }
 
 body,
@@ -139,7 +139,7 @@ a {
       width: $sidePanelWidth;
       margin-top: $topSpacing;
       box-sizing: border-box;
-      padding: 0 4rem;
+      padding: 0 3rem;
       position: fixed;
       @media all and (max-width: $fullPageWidth) {
         position: initial;
@@ -151,7 +151,7 @@ a {
     }
 
     & .sidebar.left {
-      left: calc(calc(100vw - $pageWidth) / 2 - $sidePanelWidth);
+      left: calc(calc(100% - $pageWidth) / 2 - $sidePanelWidth);
       @media all and (max-width: $fullPageWidth) {
         gap: 0;
         align-items: center;
@@ -159,11 +159,15 @@ a {
     }
 
     & .sidebar.right {
-      right: calc(calc(100vw - $pageWidth) / 2 - $sidePanelWidth);
+      right: calc(calc(100% - $pageWidth) / 2 - $sidePanelWidth);
       & > * {
         @media all and (max-width: $fullPageWidth) {
           flex: 1;
         }
+      }
+      & ul.overflow:after, ol.overflow:after {
+        left: auto;
+        right: 0px;
       }
     }
   }

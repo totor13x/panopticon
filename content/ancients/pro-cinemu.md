@@ -1,5 +1,6 @@
 ---
 title: Про Синему
+tags: [shaftcc, lidisu]
 ---
 
 # Предисловие

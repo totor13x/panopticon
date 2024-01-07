@@ -40,7 +40,7 @@
     z-index: 9999;
     left: 0;
     top: 0;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     backdrop-filter: blur(4px);
     display: none;
@@ -60,7 +60,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       height: 60vh;
-      width: 50vw;
+      width: 50%;
 
       @media all and (max-width: $fullPageWidth) {
         width: 90%;

@@ -7,7 +7,8 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
+      provider: "google",
+      tagId: 'G-WVYJ0QLY7P'
     },
     baseUrl: "totor13x.com",
     ignorePatterns: [
