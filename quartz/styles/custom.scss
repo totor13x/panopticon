@@ -6,6 +6,10 @@ p > img {
     display: block;
 }
 
+p > svg {
+    vertical-align: sub;
+}
+
 p > video + em {
     display: block;
     // transform: translateY(-1rem);

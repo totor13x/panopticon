@@ -1,6 +1,7 @@
 import esbuild from "esbuild"
 import remarkParse from "remark-parse"
 import remarkRehype from "remark-rehype"
+import inlineSVG from "rehype-inline-svg";
 import { Processor, unified } from "unified"
 import { Root as MDRoot } from "remark-parse/lib"
 import { Root as HTMLRoot } from "hast"
@@ -19,7 +20,11 @@ export function createProcessor(ctx: BuildCtx): QuartzProcessor {
   const transformers = ctx.cfg.plugins.transformers
 
   // base Markdown -> MD AST
-  let processor = unified().use(remarkParse)
+  let processor = unified()
+  
+  
+  processor = processor.use(remarkParse)
+  
 
   // MD AST -> MD AST transforms
   for (const plugin of transformers.filter((p) => p.markdownPlugins)) {
@@ -29,11 +34,14 @@ export function createProcessor(ctx: BuildCtx): QuartzProcessor {
   // MD AST -> HTML AST
   processor = processor.use(remarkRehype, { allowDangerousHtml: true })
 
+  // @ts-ignore
+  processor = processor.use(inlineSVG, { allowDangerousHtml: true })
+
   // HTML AST -> HTML AST transforms
   for (const plugin of transformers.filter((p) => p.htmlPlugins)) {
     processor = processor.use(plugin.htmlPlugins!(ctx))
   }
-
+  
   return processor
 }
 
