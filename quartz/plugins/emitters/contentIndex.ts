@@ -111,6 +111,14 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
             ext: ".xml",
           }),
         )
+
+        emitted.push(
+          await emit({
+            content: `User-agent: *\nDisallow:\nSitemap: https://${cfg.baseUrl ?? ""}/sitemap.xml`,
+            slug: "robots" as FullSlug,
+            ext: ".txt",
+          }),
+        )
       }
 
       if (opts?.enableRSS) {
