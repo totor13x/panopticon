@@ -31,7 +31,6 @@ export default (() => {
         <meta name="keywords" content="цифровой огород, программирование, разработка веб-сайтов, Totor13x, веб-разработка, разработка GLua, Garry`s Mod Lua, Garry`s mod" />
         <meta name="generator" content="Quartz" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="canonical" href={`https://${cfg.baseUrl}${fileData.slug}`} />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         {css.map((href) => (
           <link key={href} href={href} rel="stylesheet" type="text/css" spa-preserve />
