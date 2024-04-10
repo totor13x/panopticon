@@ -6,16 +6,20 @@ import { Theme } from "./util/theme"
 export type Analytics =
   | null
   | {
-      provider: "plausible"
-    }
+    provider: "plausible"
+  }
   | {
-      provider: "google"
-      tagId: string
-    }
+    provider: "google"
+    tagId: string
+  }
   | {
-      provider: "umami"
-      websiteId: string
-    }
+    provider: "umami"
+    websiteId: string
+  }
+  | {
+    provider: "yandex"
+    tagId: string
+  }
 
 export interface GlobalConfiguration {
   pageTitle: string
@@ -24,7 +28,7 @@ export interface GlobalConfiguration {
   /** Whether to display Wikipedia-style popovers when hovering over links */
   enablePopovers: boolean
   /** Analytics mode */
-  analytics: Analytics
+  analytics: Analytics[]
   /** Glob patterns to not search */
   ignorePatterns: string[]
   /** Whether to use created, modified, or published as the default type of date */

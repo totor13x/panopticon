@@ -6,11 +6,17 @@ const config: QuartzConfig = {
     pageTitle: "🍁 Цифровой огород",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "google",
-      tagId: 'G-WVYJ0QLY7P'
-    },
-    baseUrl: "totor13x.com",
+    analytics: [
+      {
+        provider: "google",
+        tagId: 'G-P2DWLJX2JD'
+      },
+      {
+        provider: "yandex",
+        tagId: "96986042",
+      }
+    ],
+    baseUrl: "totor13x.co",
     ignorePatterns: [
       "private",
       "templates",

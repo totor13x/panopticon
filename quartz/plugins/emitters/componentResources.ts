@@ -75,36 +75,61 @@ function addGlobalPageResources(
     componentResources.css.push(popoverStyle)
   }
 
-  if (cfg.analytics?.provider === "google") {
-    const tagId = cfg.analytics.tagId
-    staticResources.js.push({
-      src: `https://www.googletagmanager.com/gtag/js?id=${tagId}`,
-      contentType: "external",
-      loadTime: "afterDOMReady",
-    })
-    componentResources.afterDOMLoaded.push(`
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag(\`js\`, new Date());
-      gtag(\`config\`, \`${tagId}\`, { send_page_view: false });
-  
-      document.addEventListener(\`nav\`, () => {
-        gtag(\`event\`, \`page_view\`, {
-          page_title: document.title,
-          page_location: location.href,
-        });
-      });`)
-  } else if (cfg.analytics?.provider === "plausible") {
-    componentResources.afterDOMLoaded.push(plausibleScript)
-  } else if (cfg.analytics?.provider === "umami") {
-    componentResources.afterDOMLoaded.push(`
+  if (typeof cfg.analytics === 'object') {
+    for (const analytic of cfg.analytics) {
+
+      if (analytic?.provider === "google") {
+        const tagId = analytic.tagId
+        staticResources.js.push({
+          src: `https://www.googletagmanager.com/gtag/js?id=${tagId}`,
+          contentType: "external",
+          loadTime: "afterDOMReady",
+        })
+        componentResources.afterDOMLoaded.push(`
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag(\`js\`, new Date());
+          gtag('config', '${tagId}');
+      
+          document.addEventListener(\`nav\`, () => {
+            gtag(\`event\`, \`page_view\`, {
+              page_title: document.title,
+              page_location: location.href,
+            });
+          });`)
+      } else if (analytic?.provider === 'yandex') {
+        const tagId = analytic.tagId
+        componentResources.afterDOMLoaded.push(`
+          (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          m[i].l=1*new Date();
+          for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+          (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+          ym(${tagId}, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true
+          });
+        `)
+        componentResources.afterDOMLoaded.push(`
+          let noscript = document.createElement('div');
+          noscript.innerHTML = \`<noscript><div><img src="https://mc.yandex.ru/watch/${tagId}" style="position:absolute; left:-9999px;" alt="" /></div></noscript>\`;
+          document.body.appendChild(noscript);
+        `)
+      } else if (analytic?.provider === "plausible") {
+        componentResources.afterDOMLoaded.push(plausibleScript)
+      } else if (analytic?.provider === "umami") {
+        componentResources.afterDOMLoaded.push(`
       const umamiScript = document.createElement("script")
       umamiScript.src = "https://analytics.umami.is/script.js"
-      umamiScript.setAttribute("data-website-id", "${cfg.analytics.websiteId}")
+      umamiScript.setAttribute("data-website-id", "${analytic.websiteId}")
       umamiScript.async = true
   
       document.head.appendChild(umamiScript)
     `)
+      }
+    }
   }
 
   if (cfg.enableSPA) {

@@ -11,4 +11,4 @@ title: Обо мне
 * [Дискорд](https://discordapp.com/users/376434801680449536)
 * [X](https://x.com/totor13x)
 * [YouTube](https://www.youtube.com/@totor13x)
-* [Почта](mailto:reply@totor13x.com)
+* [Почта](mailto:reply@totor13x.co)
