@@ -11,7 +11,7 @@ date: 2021-3-3
 
 Также хочу поделиться со статистикой за квартал, и видно что онлайн просел. С одной стороны, я знаю что в среднем за день посещает 40 человек, и это очень здорово, так что стоит быть объективным - хоть и онлайн просел, есть постоянные игроки и ради вас я пишу пост.
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/lost.png)
+![](https://cdn.totor13x.co/images/archives/lost.png)
 *Думаю, что можно разместить здесь опрос:*
 
 Я думаю, что когда-нибудь будет реализовано мобильное приложение. Если, конечно, сама по себе есть в этом нужда.
@@ -22,7 +22,7 @@ date: 2021-3-3
 
 За этот промежуток времени были сделаны трейды и общее хранилище предметов.
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/lost.png)
+![](https://cdn.totor13x.co/images/archives/lost.png)
 *Окно хранилища*
 
 Коротко о прошедших тестированиях: в общем первые тесты показали как система умеет падать и биться в конвульсиях. Это, просто, \*\*\*\*\*\*. Пришлось потратить около недели, чтобы понять че вообще происходит.
@@ -33,19 +33,19 @@ date: 2021-3-3
 
 Впрочем есть, что может и заинтересовать:
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/lost.png)
+![](https://cdn.totor13x.co/images/archives/lost.png)
 
 Станет доступен функционал по просмотру онлайна за неделю, инвентарь с ТТС предметами и их последующая активация с сайта, информация по блокировкам, изображения, етц.
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/lost.png)
+![](https://cdn.totor13x.co/images/archives/lost.png)
 *Страница онлайна*
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/lost.png)
+![](https://cdn.totor13x.co/images/archives/lost.png)
 *Инвентарь ТТС*
 
 Также была доработана страница блокировок, можно накладывать или убирать фильтры и это все хорошо выглядит с мобильного телефона.
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/fcde03e2-a1dd-4ca6-b155-9b4ed4abe421.gif)
+![](https://cdn.totor13x.co/images/archives/shaftcc/fcde03e2-a1dd-4ca6-b155-9b4ed4abe421.gif)
 
 Также была тонна фиксов и улучшений серверной стороны, добавлена интеграция с дискордом и остальное что тоже не имеет значения для большинства.
 

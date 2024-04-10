@@ -36,10 +36,10 @@ date: 2020-7-31
 
 Сейчас я пишу базовые компоненты для того, чтобы пользователь мог взаимодействовать с поинтшопом - тоже самое я писал месяцев 5 назад. И так будет, пока я не преодолею порог в 50% от написанного в прошлом. Это самое глупое, если так подумать. Зато есть определенный плюс в данной переработке:
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/12cbc510-92d6-4fe1-ae5d-d01a257beff0.png)
+![](https://cdn.totor13x.co/images/archives/shaftcc/12cbc510-92d6-4fe1-ae5d-d01a257beff0.png)
 *До переработки*
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/shaftcc/c94f1eeb-d490-43d4-993a-d53c59ed0166.png)
+![](https://cdn.totor13x.co/images/archives/shaftcc/c94f1eeb-d490-43d4-993a-d53c59ed0166.png)
 *После переработки*
 
 Очевидным преимуществом является понимание ошибок, которые были написаны ранее и недопущены сейчас и общий прирост производительности.

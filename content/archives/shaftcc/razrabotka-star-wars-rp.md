@@ -18,13 +18,13 @@ date: 2020-7-1
 
 Я врубил стримчанский на своем ютуб канале и пошел развлекаться. На этот стрим сразу же зашел знаете кто? Да, правильно, Тотор. В тот момент он находился в армии на службе. И предложил мне создать собственный проект на эту тематику. Я заинтересовался и начал изучать структуру.
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/lost.png)
+![](https://cdn.totor13x.co/images/archives/lost.png)
 
 Мой батальон
 
 Через неделю игры, достиг того, что стал КМД батальона. Уже имел состав в 25 человек. Решили, сервер будет построен на собственно движке, но об этом будет ниже.
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/lost.png)
+![](https://cdn.totor13x.co/images/archives/lost.png)
 
 Моя первая задача – придумать оформление (Hud)
 
@@ -35,31 +35,31 @@ date: 2020-7-1
 
 Идея состоит в том, чтобы человека повышать-понижать-переводить в другие батальоны, ВСЕГО по нажатию 1 кнопки.
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/lost.png)
+![](https://cdn.totor13x.co/images/archives/lost.png)
 
 Черновой вариант
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/lost.png)
+![](https://cdn.totor13x.co/images/archives/lost.png)
 
 Что получилось
 
 Далее я начал придумывать профессии. И получилась вот такая структура развития. (Ниже будут скрины, там все подробнее увидите).
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/lost.png)
+![](https://cdn.totor13x.co/images/archives/lost.png)
 
 Структура профессий 
 
 Идея состоит в том, что клон, может развиваться только по 1 специальности: медик, инженер или пехотинец.
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/lost.png)
+![](https://cdn.totor13x.co/images/archives/lost.png)
 
 Структура Инженеров
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/lost.png)
+![](https://cdn.totor13x.co/images/archives/lost.png)
 
 Структура медиков
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/lost.png)
+![](https://cdn.totor13x.co/images/archives/lost.png)
 
 Структура пехотинцев
 
@@ -75,15 +75,15 @@ date: 2020-7-1
 
 Ах да, еще же нужно было выбрать карту, на которой мы бы базировались. Тогда Тотор познакомил меня с Лебеном. Он вам известен. Была идея переделать уже готовую карту под наш лад. Выбрали всем уже знакомую, Ришимун. И вот, что у Лебена получилось сделать, не красота ли.
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/lost.png)
+![](https://cdn.totor13x.co/images/archives/lost.png)
 
 Выход с кадетки
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/lost.png)
+![](https://cdn.totor13x.co/images/archives/lost.png)
 
 Вид из зало собрания джедаев
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/lost.png)
+![](https://cdn.totor13x.co/images/archives/lost.png)
 
 ВПП
 
@@ -96,15 +96,15 @@ date: 2020-7-1
 
 С моей части начались работы по созданию своих собственных анимаций.
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/lost.png)
+![](https://cdn.totor13x.co/images/archives/lost.png)
 
 Наручники
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/lost.png)
+![](https://cdn.totor13x.co/images/archives/lost.png)
 
 Руи спереди
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/lost.png)
+![](https://cdn.totor13x.co/images/archives/lost.png)
 
 Руки вверх
 
@@ -112,7 +112,7 @@ date: 2020-7-1
 
 Я в сотый раз пересобрал контент, а так же сделал собственную модельку для профессии “Группа захвата“
 
-![](https://digital-garden.website.yandexcloud.net/images/archives/lost.png)
+![](https://cdn.totor13x.co/images/archives/lost.png)
 
 Щит
 

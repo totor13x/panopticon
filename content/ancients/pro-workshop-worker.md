@@ -6,7 +6,7 @@ tags: [shaftcc, lidisu]
 Последние мои коммиты по проекту были в середине 2022, на текущий момент прошло полтора года. В целом это повод рарссказать о том, что это вообще такое было и для чего было нужно.
 
 <div style="display: flex;justify-content: center;align-content: center;">
-<img src="https://digital-garden.website.yandexcloud.net/images/pro-workshop-worker/85f748fd-ba95-4c5b-bc2b-fdf9444d486d.png" style="max-width: 450px;width: 100%;">
+<img src="https://cdn.totor13x.co/images/pro-workshop-worker/85f748fd-ba95-4c5b-bc2b-fdf9444d486d.png" style="max-width: 450px;width: 100%;">
 </div>
 
 ## Что это такое
@@ -18,7 +18,7 @@ tags: [shaftcc, lidisu]
 Плюсы автоматической системы достаточно очевидны - снизить количество путаницы, удаление какие-то устаревших ассетов, быстрое добавление/удаление или хотфиксы текстур. Я очень не любил заниматься контентом, поэтому практически всю работу выполнял Женя. Мне кажется, что в последствии он преисполнился в познании этой нелегкой работы - 4 года умственного насилия, по сути свою работу он выполнял отлично.
 
 <div style="display: flex;justify-content: center;align-content: center;">
-<img src="https://digital-garden.website.yandexcloud.net/images/pro-workshop-worker/ede06fcf-39a3-4fcc-bcd7-0620fb6dc77d.png" style="max-width: 500px;width: 100%;">
+<img src="https://cdn.totor13x.co/images/pro-workshop-worker/ede06fcf-39a3-4fcc-bcd7-0620fb6dc77d.png" style="max-width: 500px;width: 100%;">
 </div>
 <div style="text-align:center"><i>Этот парень был из тех, кто просто любит жизнь.</i></div>
 
@@ -26,45 +26,45 @@ tags: [shaftcc, lidisu]
 
 
 <div style="display: flex;justify-content: center;align-content: center;">
-<img src="https://digital-garden.website.yandexcloud.net/images/pro-workshop-worker/4bbbf9e9-0f62-4302-ae6b-7dd33994f514.png" style="max-width: 450px;width: 100%;">
+<img src="https://cdn.totor13x.co/images/pro-workshop-worker/4bbbf9e9-0f62-4302-ae6b-7dd33994f514.png" style="max-width: 450px;width: 100%;">
 </div>
 <div style="text-align:center"><i>Тюф №1</i></div>
 
 
 <div style="display: flex;justify-content: center;align-content: center;">
-<img src="https://digital-garden.website.yandexcloud.net/images/pro-workshop-worker/8a6f6390-f3d8-4f16-a2d8-c86d458c7157.png" style="max-width: 450px;width: 100%;">
+<img src="https://cdn.totor13x.co/images/pro-workshop-worker/8a6f6390-f3d8-4f16-a2d8-c86d458c7157.png" style="max-width: 450px;width: 100%;">
 </div>
 <div style="text-align:center"><i>Тюф №2</i></div>
 
 
 Так как мой самый первый проект был лиди, опыта в работе ни у кого не было, чистая проба пера. Да и в первое время контента было немного, поэтому конечное взаимодействие сводилось ближе к банальной ссылке из оригинальных воркшоп предметов в одну коллекцию без оптимизации.
 
-![](https://digital-garden.website.yandexcloud.net/images/pro-workshop-worker/13faa632-5061-455c-97e2-aed0a455d68d.png)
+![](https://cdn.totor13x.co/images/pro-workshop-worker/13faa632-5061-455c-97e2-aed0a455d68d.png)
 *Коротко о том, как работает контент в гаррисе*
 
 По мере наполнения контента мы сталкивались с трудностями, в первую очередь в плане кода. Сервер можно легко взломать, так как связанные с коллекцией предметы, сами обновлялись и в одном из предметов мог затесаться lua файл, который точно бы исполнился. Также какой нибудь автор мог использовать 4К полотно чисто белого цвета и без альфа канала… Зачем, одному автору известно, ну и сами 4К текстуры на моделях… Ну, такое. Да, круто... но такое, учитывая что в гаррис в основном играли на достаточно слабом железе, а сама игра обрабатывала такие текстуры с трудом. Мы пришли к выводу, что лучший вариант на тот момент - ручная проверка всех текстур, чистка от луа файлов и своеобразная консервация в наших собственных сборках.
 
 
 <div style="display: flex;justify-content: center;align-content: center;">
-<img src="https://digital-garden.website.yandexcloud.net/images/pro-workshop-worker/e5094702-49f2-49f3-a75c-caf593182b28.png" style="max-width: 450px;width: 100%;">
+<img src="https://cdn.totor13x.co/images/pro-workshop-worker/e5094702-49f2-49f3-a75c-caf593182b28.png" style="max-width: 450px;width: 100%;">
 </div>
 <div style="text-align:center"><i>Такая рутина, я хз как он выдержал всю эту историю</i></div>
 
-![](https://digital-garden.website.yandexcloud.net/images/pro-workshop-worker/02882204-c053-432e-b0be-d238d2475dfe.png)
+![](https://cdn.totor13x.co/images/pro-workshop-worker/02882204-c053-432e-b0be-d238d2475dfe.png)
 *Наша таблица ведения контента, было актуально до 2019 года*
 
-![](https://digital-garden.website.yandexcloud.net/images/pro-workshop-worker/3cd973b4-0e98-4201-8127-05e2722779be.png)
+![](https://cdn.totor13x.co/images/pro-workshop-worker/3cd973b4-0e98-4201-8127-05e2722779be.png)
 *Наша таблица ведения контента, итоговые результаты*
 
 
 В конце концов помимо одинокой модели в gma может спокойно размещаться регдолл, который к модели имеет слабое отношение, мини оружия, туфельки всякие и прочие и чистка уже от этих моделей был наш следующий этап эволюции.
 
-![](https://digital-garden.website.yandexcloud.net/images/pro-workshop-worker/a1515de9-4e87-427b-bb7a-f3a72c3d2d76.jpeg)
+![](https://cdn.totor13x.co/images/pro-workshop-worker/a1515de9-4e87-427b-bb7a-f3a72c3d2d76.jpeg)
 *Первый запуск приложения, скриншот с теста*
 
 К сожалению никакого материала особо не осталось, а восстанавливать проект ради демонстрации работы как-то не очень не хочется. Я постарался собрать демо-версию сборщика, в которой только визуальная часть.
 
-<video controls src="https://digital-garden.website.yandexcloud.net/images/pro-workshop-worker/c9b34c87-c943-4fa4-a8df-4252bb607d55.mp4"></video>
+<video controls src="https://cdn.totor13x.co/images/pro-workshop-worker/c9b34c87-c943-4fa4-a8df-4252bb607d55.mp4"></video>
 *Демо-версия приложения для работы с сборщиком*
 
 ## Как это работает
@@ -72,7 +72,7 @@ tags: [shaftcc, lidisu]
 В целом работоспособность логика приложения была сделана таким образом. 
 Сервер > Коллекция > Воркшоп контейнер > Локальные контейнеры (сами модели, текстуры). Схема немного замудренная, в ней и разобраться на этапе проектирования было сложно. 
 
-![](https://digital-garden.website.yandexcloud.net/images/pro-workshop-worker/b5daadac-e784-4823-b4f0-087f264a74e0.png)
+![](https://cdn.totor13x.co/images/pro-workshop-worker/b5daadac-e784-4823-b4f0-087f264a74e0.png)
 *Схема*
 
 - Сервер - это сервер, к которому принадлежит коллекция. Предполагалось, что коллекция будет иметь определенное напраление, к примеру - коллекция с оружием, коллекция с одеждой, коллекция с приватками и т.д.
