@@ -1,0 +1,26 @@
+{
+    "theme_color": "#161618",
+    "background_color": "#161618",
+    "icons": [
+        {
+            "purpose": "maskable",
+            "sizes": "512x512",
+            "src": "icon512_maskable.png",
+            "type": "image/png"
+        },
+        {
+            "purpose": "any",
+            "sizes": "512x512",
+            "src": "icon512_rounded.png",
+            "type": "image/png"
+        }
+    ],
+    "orientation": "any",
+    "display": "browser",
+    "dir": "auto",
+    "lang": "ru-RU",
+    "name": "Паноптикум",
+    "short_name": "Паноптикум",
+    "start_url": "https://totor13x.co/",
+    "scope": "https://totor13x.co/"
+}

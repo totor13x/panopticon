@@ -121,13 +121,13 @@ function addGlobalPageResources(
         componentResources.afterDOMLoaded.push(plausibleScript)
       } else if (analytic?.provider === "umami") {
         componentResources.afterDOMLoaded.push(`
-      const umamiScript = document.createElement("script")
-      umamiScript.src = "https://analytics.umami.is/script.js"
-      umamiScript.setAttribute("data-website-id", "${analytic.websiteId}")
-      umamiScript.async = true
-  
-      document.head.appendChild(umamiScript)
-    `)
+          const umamiScript = document.createElement("script")
+          umamiScript.src = "https://analytics.umami.is/script.js"
+          umamiScript.setAttribute("data-website-id", "${analytic.websiteId}")
+          umamiScript.async = true
+      
+          document.head.appendChild(umamiScript)
+        `)
       }
     }
   }

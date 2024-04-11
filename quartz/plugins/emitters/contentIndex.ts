@@ -6,6 +6,7 @@ import { FilePath, FullSlug, SimpleSlug, simplifySlug } from "../../util/path"
 import { QuartzEmitterPlugin } from "../types"
 import { toHtml } from "hast-util-to-html"
 import path from "path"
+import { glob } from "../../util/glob"
 
 export type ContentIndex = Map<FullSlug, ContentDetails>
 export type ContentDetails = {
