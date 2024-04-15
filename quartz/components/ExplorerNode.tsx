@@ -185,7 +185,7 @@ export function ExplorerNode({ node, opts, fullPath, fileData }: ExplorerNodePro
               {/* render <a> tag if folderBehavior is "link", otherwise render <button> with collapse click event */}
               <div key={node.name} data-folderpath={folderPath}>
                 {/* {folderBehavior === "link" ? ( */}
-                  <a href={`${folderPath}`} data-for={node.name} class="folder-title">
+                  <a href={`${folderPath}/`} data-for={node.name} class="folder-title">
                     {node.displayName}
                   </a>
                 {/* // ) : (
