@@ -48,6 +48,13 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ContentMeta(),
     Component.TagList(),
   ],
+  afterBody: [
+    Component.RecentNotes({
+      filter: function(item) {
+        return item?.text !== ''
+      }
+    }),
+  ],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
@@ -66,7 +73,10 @@ export const defaultContentPageLayout: PageLayout = {
 
 // components for pages that display lists of pages  (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
-  beforeBody: [Component.ArticleTitle()],
+  beforeBody: [
+    Component.ArticleTitle(),
+  ],
+  afterBody: [],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),

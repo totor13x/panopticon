@@ -16,7 +16,7 @@ interface Options {
 
 const defaultOptions = (cfg: GlobalConfiguration): Options => ({
   title: "Recent Notes",
-  limit: 3,
+  limit: 6,
   linkToMore: false,
   filter: () => true,
   sort: byDateAndAlphabetical(cfg),
@@ -27,9 +27,15 @@ export default ((userOpts?: Partial<Options>) => {
     const opts = { ...defaultOptions(cfg), ...userOpts }
     const pages = allFiles.filter(opts.filter).sort(opts.sort)
     const remaining = Math.max(0, pages.length - opts.limit)
-    return (
+    // console.log(pages.slice(0, opts.limit).map((o) => {
+    //   return {
+    //     ...o,
+    //     text: o.text?.slice(0, 100),§
+    //   }
+    // }))
+    // console.log(fileData.slug === "index")
+    return fileData.slug === "index" ? (
       <div class={`recent-notes ${displayClass ?? ""}`}>
-        <h3>{opts.title}</h3>
         <ul class="recent-ul">
           {pages.slice(0, opts.limit).map((page) => {
             const title = page.frontmatter?.title
@@ -39,29 +45,31 @@ export default ((userOpts?: Partial<Options>) => {
               <li class="recent-li">
                 <div class="section">
                   <div class="desc">
-                    <h3>
+                    <div>
                       <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
                         {title}
                       </a>
-                    </h3>
+                    </div>
                   </div>
-                  {page.dates && (
-                    <p class="meta">
-                      <Date date={getDate(cfg, page)!} />
-                    </p>
-                  )}
-                  <ul class="tags">
-                    {tags.map((tag) => (
-                      <li>
-                        <a
-                          class="internal tag-link"
-                          href={resolveRelative(fileData.slug!, `tags/${tag}` as FullSlug)}
-                        >
-                          #{tag}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
+                  <div class="inline-desc">
+                    {page.dates && (
+                      <p class="meta">
+                        <Date date={getDate(cfg, page)!} />
+                      </p>
+                    )}
+                    <ul class="tags">
+                      {tags.map((tag) => (
+                        <li>
+                          <a
+                            class="internal tag-link"
+                            href={resolveRelative(fileData.slug!, `tags/${tag}` as FullSlug)}
+                          >
+                            #{tag}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </li>
             )
@@ -73,7 +81,7 @@ export default ((userOpts?: Partial<Options>) => {
           </p>
         )}
       </div>
-    )
+    ) : null
   }
 
   RecentNotes.css = style

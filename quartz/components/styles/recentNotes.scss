@@ -10,14 +10,36 @@
     padding-left: 0;
 
     & > li {
-      margin: 1rem 0;
+      margin: 0.5rem 0;
+      // font-size: 0.9rem;
       .section > .desc > h3 > a {
         background-color: transparent;
       }
 
-      .section > .meta {
-        margin: 0 0 0.5rem 0;
-        opacity: 0.6;
+      .section > .inline-desc {
+        display: flex;
+        align-items: center;
+        min-height: 26px;
+        // margin: 0rem;
+        // line-height: 0.8rem;
+      }
+
+      .section .meta, .section .tags {
+        // margin: 0 0 0.5rem 0;
+        margin: 0rem;
+        font-size: 0.8rem;
+        line-height: 1rem;
+      }
+      .section .meta {
+        opacity: 0.7;
+        margin-right: 0.5rem;
+      }
+
+      .tag-link {
+        border-radius: 8px;
+        margin: 0 .1rem;
+        padding: 0.1rem 0.3rem;
+        font-size: 0.7rem;
       }
     }
   }
