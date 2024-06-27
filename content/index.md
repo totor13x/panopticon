@@ -17,7 +17,7 @@ date: 2023-11-04
 * [[stuffs/garrysmod/instrumenti-links|Ссылки и инструменты для работы с моделями и текстурами в Гаррис Мод]]
 
 ## Древности
-* [[ancients/pro-marder|Про Мардера]]
+* [[ancients/pro-marder|Ретроспектива разработки Мардера]]
 * [[ancients/pro-workshop-worker|Про Воркшоп сборщик]]
 * [[ancients/pro-cinemu|Про Синему]]
 * [[ancients/o-nesbivshihsya-mechtah|О несбывшихся мечтах]]
