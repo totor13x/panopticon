@@ -45,12 +45,17 @@ export const TagPage: QuartzEmitterPlugin<FullPageLayout> = (userOpts) => {
 
       const tagDescriptions: Record<string, ProcessedContent> = Object.fromEntries(
         [...tags].map((tag) => {
-          const title = tag === "" ? "Tag Index" : `Tag: #${tag}`
+          const title = tag === "index" ? "Tag Index" : `Tag: #${tag}`
+          const seoDescription = tag === "index" 
+            ? "Explore all topics and interests covered on my digital garden. Find articles and resources tagged with specific keywords."
+            : `Discover articles and resources related to #${tag} on digital garden. Engage with content tagged with #${tag} to explore related topics.`;
+    
           return [
             tag,
             defaultProcessedContent({
               slug: joinSegments("tags", tag) as FullSlug,
-              frontmatter: { title, tags: [] },
+              description: seoDescription,
+              frontmatter: { title, tags: []},
             }),
           ]
         }),

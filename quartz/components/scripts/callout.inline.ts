@@ -42,3 +42,38 @@ function setupCallout() {
 
 document.addEventListener(`nav`, setupCallout)
 window.addEventListener(`resize`, setupCallout)
+
+
+function randomizeTextCapitalizationAndColor(text: string) {
+  return text.split(``).map(char => {
+    const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+    const transformedChar = Math.random() > 0.5 ? char.toUpperCase() : char.toLowerCase();
+    const createSpan = document.createElement(`span`);
+    createSpan.style.color = randomColor;
+    createSpan.textContent = transformedChar;
+    
+    return createSpan.outerHTML;
+  }).join(``);
+}
+let bulkaInterval: number | null = null;
+const setupBulkaEffect = () => {
+  if (bulkaInterval) {
+    clearInterval(bulkaInterval);
+  }
+  var bulkaEffect = document.querySelector(`[data-callout='promarderbulka']  .callout-title-inner p`);
+
+  if (bulkaEffect) {
+    const originalText = bulkaEffect.textContent!;
+    bulkaInterval = setInterval(() => {
+      if (bulkaEffect) {
+        bulkaEffect.innerHTML = randomizeTextCapitalizationAndColor(originalText);
+      } else {
+        clearInterval(bulkaInterval);
+      }
+    }, 100);
+  }
+}
+
+
+document.addEventListener(`nav`, setupBulkaEffect)
+window.addEventListener(`resize`, setupBulkaEffect)

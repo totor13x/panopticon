@@ -13,8 +13,10 @@ description: Добро пожаловать в цифровой огород to
 
 ## Разные полезности
 * [[stuffs/scripts/telegram-status-sync|Синхронизация статуса телеграма]]
+* [[stuffs/garrysmod/instrumenti-links|Ссылки и инструменты для работы с моделями и текстурами в Гаррис Мод]]
 
 ## Древности
+* [[ancients/pro-marder|Про Мардера]]
 * [[ancients/pro-workshop-worker|Про Воркшоп сборщик]]
 * [[ancients/pro-cinemu|Про Синему]]
 * [[ancients/o-nesbivshihsya-mechtah|О несбывшихся мечтах]]
