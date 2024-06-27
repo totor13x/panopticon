@@ -1,6 +1,7 @@
 ---
 title: Про Синему
-tags: [shaftcc, lidisu]
+tags: [shaftcc, lidisu, cinema]
+date: 2023-12-22
 ---
 
 ## Предисловие

@@ -1,5 +1,6 @@
 ---
 title: Ретроспектива разработки Мардера
+tags: [murder, retrospective, shaftcc, lidisu]
 date: 2024-06-27
 ---
 
