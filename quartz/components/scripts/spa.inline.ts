@@ -18,6 +18,18 @@ const isLocalUrl = (href: string) => {
   return false
 }
 
+const checkHashForNav = (url: URL) => {
+  if (url.hash) {
+    const el = document.getElementById(decodeURIComponent(url.hash.substring(1)))
+    // Почему так? Ну, где-то в плагинах или в коде лежит scrollIntoView и сбивается
+    setTimeout(() => {
+      el?.scrollIntoView()
+    }, 50)
+  } else {
+    window.scrollTo({ top: 0 })
+  }
+}
+
 const getOpts = ({ target }: Event): { url: URL; scroll?: boolean } | undefined => {
   if (!isElement(target)) return
   if (target.attributes.getNamedItem("target")?.value === "_blank") return
@@ -66,12 +78,7 @@ async function navigate(url: URL, isBack: boolean = false) {
 
   // scroll into place and add history
   if (!isBack) {
-    if (url.hash) {
-      const el = document.getElementById(decodeURIComponent(url.hash.substring(1)))
-      el?.scrollIntoView()
-    } else {
-      window.scrollTo({ top: 0 })
-    }
+    checkHashForNav(url)
   }
 
   // now, patch head
@@ -149,8 +156,19 @@ const currentPath = document.body.dataset.slug
 const query = document.querySelector(`.node-explorer[data-path^="${currentPath}"]`)
 query?.classList.add("active")
 
+document.addEventListener("nav", () => {
+  if (!window.onceTrigger) {
+    const urlIns = new URL(document.URL)
+    window.onceTrigger = true
+    if (urlIns.hash) {
+      checkHashForNav(urlIns)
+    }
+  }
+})
+
 createRouter()
 notifyNav(getFullSlug(window))
+
 
 if (!customElements.get("route-announcer")) {
   const attrs = {

@@ -14,6 +14,8 @@ import { StaticResources } from "../../util/resources"
 import { QuartzComponent } from "../../components/types"
 import { googleFontHref, joinStyles } from "../../util/theme"
 import { Features, transform } from "lightningcss"
+// @ts-ignore
+import { minify_sync } from "terser";
 
 type ComponentResources = {
   css: string[]
@@ -58,7 +60,13 @@ function getComponentResources(ctx: BuildCtx): ComponentResources {
 
 function joinScripts(scripts: string[]): string {
   // wrap with iife to prevent scope collision
-  return scripts.map((script) => `(function () {${script}})();`).join("\n")
+  
+  return scripts.map((script) => {
+    // console.log('----')
+    // console.log(script)
+    // fs.writeFileSync('script.js', script.replaceAll('?.', '.').replaceAll('??', '||'))
+    return `(function () {${script}})();`
+  }).join("\n")
 }
 
 function addGlobalPageResources(
@@ -192,6 +200,7 @@ export const ComponentResources: QuartzEmitterPlugin<Options> = (opts?: Partial<
       const stylesheet = joinStyles(ctx.cfg.configuration.theme, ...componentResources.css, styles)
       const prescript = joinScripts(componentResources.beforeDOMLoaded)
       const postscript = joinScripts(componentResources.afterDOMLoaded)
+
       const fps = await Promise.all([
         emit({
           slug: "index" as FullSlug,
@@ -213,12 +222,12 @@ export const ComponentResources: QuartzEmitterPlugin<Options> = (opts?: Partial<
         emit({
           slug: "prescript" as FullSlug,
           ext: ".js",
-          content: prescript,
+          content: minify_sync(prescript).code!,
         }),
         emit({
           slug: "postscript" as FullSlug,
           ext: ".js",
-          content: postscript,
+          content: minify_sync(postscript).code!,
         }),
       ])
       return fps

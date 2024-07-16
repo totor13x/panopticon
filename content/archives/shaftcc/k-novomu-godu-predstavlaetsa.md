@@ -58,34 +58,33 @@ date: 2019-12-29
 
 Ну и напоследок некоторый материал из разработок:
 
-<video controls src="https://cdn.totor13x.co/images/archives/shaftcc/d34a243d-c556-4dd9-b91b-328932a68cd3.mp4"></video>
+![](https://cdn.totor13x.co/media/archives/shaftcc/6293285d-3458-48d4-a5f0-35e26b0a2021_1280x720.mp4)
 *Это самый первый набросок панели управления клонами батальона*
 
-<video controls src="https://cdn.totor13x.co/images/archives/shaftcc/306d94a3-6820-4d15-bf5c-6f0a292dab62.mp4"></video>
+![](https://cdn.totor13x.co/media/archives/shaftcc/30265741-531d-42d5-83bd-ed1c0e58ee5d_1064x600.mp4)
 *Эта гифка демонстрирует повороты головой и интегрированные световые мечи*
 
-<video controls src="https://cdn.totor13x.co/images/archives/shaftcc/f37128c1-314e-4ed5-8c6c-82e34ba55ce0.mp4"></video>
+![](https://cdn.totor13x.co/media/archives/shaftcc/05a48054-c5d4-4919-82e1-7e09d2aa8267_1064x600.mp4)
 *А это уже иммерсив-уведомления - для меня оказалось сложным сделать их, но ведь получилось? Главное что они вышли, а удобные или нет - решат боевые единицы ShaftSWRP*
 
-![](https://cdn.totor13x.co/images/archives/shaftcc/a998c616-445d-4575-9c19-146c1dca7838.gif)
+![](https://cdn.totor13x.co/media/archives/shaftcc/f5c04369-ccc8-41fc-bf6b-0d233962a99c_1280x917.mp4)
 *Просто пример, как реализован прогресс-бар. Есть явные прогрехи, но пока что будет так.*
 
-![](https://cdn.totor13x.co/images/archives/shaftcc/18d8225c-811d-43f7-9b38-5ee5247fa77e.gif)
+![](https://cdn.totor13x.co/media/archives/shaftcc/987cbc30-1495-4d8e-abe0-6b9aaba6929b_1280x713.mp4)
 *Первое внедрение кастомных анимаций. О боже, это оказалось крайне сложной задачей, но первая анимация - "поднять руки", внедрена.*
 
-![](https://cdn.totor13x.co/images/archives/shaftcc/8ce07323-35ae-4233-a96a-765c6e3c6220.gif)
+![](https://cdn.totor13x.co/media/archives/shaftcc/b7f631a0-2fc6-4cc0-8696-163eba9858ad_1280x713.mp4)
 
-![](https://cdn.totor13x.co/images/archives/shaftcc/ab71d655-f506-4388-a56e-44e7e4f1f0bb.gif)
+![](https://cdn.totor13x.co/media/archives/shaftcc/fac30cd6-60cf-4201-b75c-c7b48946ec98_1280x719.mp4)
 *Как реализован механизм брони на движке СВРП, также на последней гифке еще одна кастомная анимация*
 
-![](https://cdn.totor13x.co/images/archives/shaftcc/079a2511-3147-4bf7-951f-347e22b22e3c.gif)
-![](https://cdn.totor13x.co/images/archives/shaftcc/224bfa6a-e6b6-4c68-a40b-604c26500104.gif)
-
+![](https://cdn.totor13x.co/media/archives/shaftcc/ab97321b-ab64-43cd-8129-c65722b8b3ae_1280x783.mp4)
+![](https://cdn.totor13x.co/media/archives/shaftcc/c0765328-2299-48c3-a3a4-acaf73a4d259_1280x721.mp4)
 *В будущем будет данная тикет-система*
 
-![](https://cdn.totor13x.co/images/archives/shaftcc/44ae0cb8-24a2-4b34-9c51-540613468c65.gif)
-![](https://cdn.totor13x.co/images/archives/shaftcc/38b315ac-0823-4117-a5c6-8891df2c76cb.png)
+![](https://cdn.totor13x.co/media/archives/shaftcc/fe804b36-56dd-40a7-ba5b-2a4947690e86_1280x721.mp4)
+![](https://cdn.totor13x.co/media/archives/shaftcc/ea2c20fa-1e32-4b8e-a38d-a001e1e4b37e_1280x752.jpg)
 *А это уже мои эксперименты с позициями шапок, масок и прочего и выбора бодигрупп*
 
-![](https://cdn.totor13x.co/images/archives/shaftcc/3f2626d4-064c-4237-a33c-921c50c2a867.gif)
+![](https://cdn.totor13x.co/media/archives/shaftcc/7e457c4c-356f-48ca-be80-588e8be368d6_1280x695.mp4)
 *И просто интересный момент*
