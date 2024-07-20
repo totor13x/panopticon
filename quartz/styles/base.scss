@@ -464,6 +464,16 @@ a.bp.is-video {
     transform: translate(-50%, -50%);
   }
 }
+.glightbox-clean .gslide-description {
+  background: var(--light) !important;
+}
+.glightbox-clean .gslide-title {
+  display: none;
+}
+.plyr__video-embed iframe, .plyr__video-wrapper--fixed-ratio video {
+  left: 50% !important;
+  transform: translate(-50%, 0px);
+}
 .bp-cap a {
   color: var(--secondary) !important;
 }

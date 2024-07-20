@@ -197,10 +197,15 @@
     --border: #467814;
     --bg: #46781410;
   }
-  &[data-callout="promarderbulka"] {
+  html[current-theme=dark] &[data-callout="promarderbulka"] {
     --color: #fff;
     --border: #fff;
     --bg: #ffffff10;
+  }
+  &[data-callout="promarderbulka"] {
+    --color: #000;
+    --border: #000;
+    --bg: #00000010;
   }
 
  

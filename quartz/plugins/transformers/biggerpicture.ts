@@ -48,10 +48,13 @@ export const BiggerPicture: QuartzTransformerPlugin = () => ({
                         
                         const attr = {}
                         if (extension === 'mp4') {
-                          attr['data-sources'] = `[{"src": "${src}", "type": "video/mp4"}]`
-                          attr['class'] = 'bp is-video'
+                          // attr['data-sources'] = `[{"src": "${src}", "type": "video/mp4"}]`
+
+                          attr['source'] = 'local', //vimeo, youtube or local
+                          attr['class'] = 'bp is-video glightbox'
+                          attr['data-type'] = 'video'
                         }else {
-                          attr['data-img'] = src
+                          attr['data-type'] = 'image'
                         } 
 
 
@@ -59,12 +62,22 @@ export const BiggerPicture: QuartzTransformerPlugin = () => ({
                         node.properties = {
                           href: src,
                           title: alt,
-                          class: 'bp',
-                          'data-thumb': thumb,
-                          'data-alt': alt,
-                          'data-caption': caption,
-                          'data-height': height,
+                          class: 'bp glightbox',
+                          // 'data-thumb': thumb,
+                          // 'data-alt': alt,
+                          // 'data-caption': caption,
+                          // 'data-height': height,
+                          // 'data-width': width,
+
+                          // 'data-title': alt,
+                          'data-description': caption,
+                          'data-desc-position': "bottom",
+                          // 'data-type': "image",
+                          'data-effect': "fade",
                           'data-width': width,
+                          'data-height': height,
+                          'data-zoomable': "true",
+                          'data-draggable': "true",
                           ...attr
                         }
 
@@ -92,40 +105,62 @@ export const BiggerPicture: QuartzTransformerPlugin = () => ({
   externalResources() {
     return {
       css: [
-        'https://cdn.jsdelivr.net/npm/bigger-picture@1.1.17/dist/bigger-picture.css'
+        // 'https://cdn.jsdelivr.net/npm/bigger-picture@1.1.17/dist/bigger-picture.css',
+        'https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css',
+        'https://cdn.plyr.io/3.5.6/plyr.css'
       ],
       js: [
         {
-          src: "https://cdn.jsdelivr.net/npm/bigger-picture@1.1.17/dist/bigger-picture.min.js",
+          src: 'https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js',
+          loadTime: "afterDOMReady",
+          contentType: "external",
+        },
+        {
+          src: 'https://cdn.plyr.io/3.5.6/plyr.js',
           loadTime: "afterDOMReady",
           contentType: "external",
         },
         {
           script: `
-          // import BiggerPicture from 'bigger-picture'
+          let bp = null
+          // const initBiggerPicture = function () {
+          //   const qs = document.body
+          //   if (!bp) {
+          //     // console.log(bp)
+          //     // bp.items = []
+          //     // bp.target = qs
+          //   // } else {
+          //     bp = BiggerPicture({
+          //       target: qs,
+          //       inline: true,
+          //     })
+          //   }
 
-          const qs = document.querySelector('article.popover-hint')
-          // initialize
-          let bp = BiggerPicture({
-            target: qs,
+            // function openBiggerPicture(e) {
+            //   e.preventDefault();
+            //   bp.open({
+            //     inline: true,
+            //     items: e.currentTarget,
+            //     el: e.currentTarget
+            //   });
+            // }
+
+            // let links = document.querySelectorAll('a.bp');
+
+            // for (let link of links) {
+            //   link.addEventListener('click', openBiggerPicture);
+            // }
+          // }
+          document.addEventListener('nav', function () {
+            if (!bp) {
+              bp = GLightbox({})
+            } else {
+              bp.reload()
+            }
+          //   console.log('init')
+          //   initBiggerPicture()
           })
-
-          // grab image links
-          let links = document.querySelectorAll('a.bp');
-
-          // add click listener on links to open BiggerPicture
-          for (let link of links) {
-            link.addEventListener('click', openBiggerPicture);
-          }
-
-          // function to open BiggerPicture
-          function openBiggerPicture(e) {
-            e.preventDefault();
-            bp.open({
-              items: e.currentTarget,
-              el: e.currentTarget
-            });
-          }
+            
           `,
           loadTime: "afterDOMReady",
           contentType: "inline",
