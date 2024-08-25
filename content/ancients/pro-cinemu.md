@@ -1,7 +1,7 @@
 ---
 title: Про Синему
 description: История разработки синемы на серверах shaft.cc и lidi.su, ретроспектива и нереализованные планы.
-tags: [shaftcc, lidisu, cinema]
+tags: [shaftcc, retrospective, lidisu, cinema]
 date: 2023-12-22
 ---
 
