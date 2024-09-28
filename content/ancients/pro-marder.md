@@ -24,7 +24,8 @@ date: 2024-06-27
 
 
 <div style="justify-content: center;display: flex;">
-<div class="sketchfab-embed-wrapper"> <iframe title="Personal" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="fullscreen" execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/54f3691884204c33a0e4cf02419495de/embed?autostart=0&preload=0&ui_theme=dark"> </iframe></div>
+<div class="sketchfab-embed-wrapper"> <iframe style="max-width
+: 100% !important;" title="Personal" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="fullscreen" execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/54f3691884204c33a0e4cf02419495de/embed?autostart=0&preload=0&ui_theme=dark"> </iframe></div>
 </div>
 
 ## Начало
