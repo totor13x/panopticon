@@ -3,7 +3,7 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🍁 Цифровой огород",
+    pageTitle: "Цифровой огород",
     enableSPA: true,
     enablePopovers: true,
     analytics: [
@@ -32,13 +32,13 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
+          light: "#f2f3ff",
           lightgray: "#e5e5e5",
           gray: "#535353",
           darkgray: "#4e4e4e",
           dark: "#2b2b2b",
-          secondary: "#ff8870",
-          tertiary: "##485657",
+          secondary: "#6667ab",
+          tertiary: "#485657",
           highlight: "rgba(143, 159, 169, 0.15)",
         },
         darkMode: {
@@ -47,8 +47,8 @@ const config: QuartzConfig = {
           gray: "#a2a2a2",
           darkgray: "#d4d4d4",
           dark: "#ebebec",
-          secondary: "#ff8870",
-          tertiary: "##485657",
+          secondary: "#6667ab",
+          tertiary: "#485657",
           highlight: "rgba(143, 159, 169, 0.15)",
         },
       },

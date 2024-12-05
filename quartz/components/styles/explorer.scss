@@ -25,7 +25,7 @@
     &.active:after {
       opacity: 1 !important;
       // add shadow like light
-      box-shadow: 0 0 9px 1px var(--secondary);
+      box-shadow: 0 0 5px 1px var(--secondary);
     }
   }
 }
