@@ -6,7 +6,7 @@ tags: [macos, ios, python, telegram, javascript, betterdiscord]
 ---
 В современном мире мессенджеры стали неотъемлемой частью нашей жизни. Они помогают нам оставаться на связи с друзьями, коллегами и близкими. Один из самых популярных мессенджеров - Telegram. Он предлагает множество функций, включая возможность установки пользовательских статусов. В этом посте мы рассмотрим, как автоматизировать процесс смены статусов в Telegram, чтобы вы могли максимально эффективно использовать эту функцию. 
 
-![Демо проекта](https://cdn.totor13x.co/media/stuffs/scripts/telegram-status-sync/6e7f838a-2b9b-41be-900a-8edf502641de_1280x979.mp4)
+![Демо проекта](https://cdn.totor13x.com/media/stuffs/scripts/telegram-status-sync/6e7f838a-2b9b-41be-900a-8edf502641de_1280x979.mp4)
 
 Я пользуюсь телеграмом для общения с друзьями и коллегами. Часто бывает так, что я занят и не могу отвечать на сообщения, с недавних пор была в премиум подписку внедрена возможность установки статусов. Я решил автоматизировать процесс смены статусов, аналогично тому как работает фокусирование в iMessage.
 
@@ -136,11 +136,11 @@ curl --request GET --url 'http://127.0.0.1:5000/set_status?status=work'
 
 Теперь перейдем к настройкам автоматизации фокусирования во время работы. В моем случае я использую iPhone, поэтому я буду рассматривать настройки для него.
 1. В первую очередь нужно создать команду. [Моя база](https://www.icloud.com/shortcuts/939f8d2c9168462c9ec65b678f4e4eb5) или скриншот ниже:
-![Скриншот команды](https://cdn.totor13x.co/media/stuffs/scripts/telegram-status-sync/e837a993-4c8e-438f-bbca-0459fda9f0c0_1280x1236.jpg)
+![Скриншот команды](https://cdn.totor13x.com/media/stuffs/scripts/telegram-status-sync/e837a993-4c8e-438f-bbca-0459fda9f0c0_1280x1236.jpg)
 2. Далее нужно создать автоматизацию, я буду создавать для режима "Не беспокоить". В моем случае для скрипта это статус Work.
-![Скриншот автоматизации](https://cdn.totor13x.co/media/stuffs/scripts/telegram-status-sync/4dc4c60e-9b95-4f1f-8d35-1f6653583a54_1280x1078.jpg)
+![Скриншот автоматизации](https://cdn.totor13x.com/media/stuffs/scripts/telegram-status-sync/4dc4c60e-9b95-4f1f-8d35-1f6653583a54_1280x1078.jpg)
 3. Теперь достаточно будет переключить фокусирование во время работы на режим "Не беспокоить", и статус в телеграме изменится на Work.
-![Демо результата](https://cdn.totor13x.co/media/stuffs/scripts/telegram-status-sync/6e7f838a-2b9b-41be-900a-8edf502641de_1280x979.mp4)
+![Демо результата](https://cdn.totor13x.com/media/stuffs/scripts/telegram-status-sync/6e7f838a-2b9b-41be-900a-8edf502641de_1280x979.mp4)
 
 ## Деплой
 Для деплоя можно использовать любой сервер, на котором можно запустить Flask. В случае того, что у вас нет возможности использовать сервер, можно использовать [Heroku](https://www.heroku.com). Он предоставляет бесплатный тариф, который вполне подойдет для наших целей. Для деплоя на Heroku вам понадобится создать файл `Procfile` и добавить в него следующую строку:
@@ -197,7 +197,7 @@ export default class SyncTelegram {
     }
 }
 ```
-![Демо для BetterDiscord](https://cdn.totor13x.co/media/stuffs/scripts/telegram-status-sync/d47cad10-a479-49fd-a30b-9b52c1a58555_1280x1585.mp4)
+![Демо для BetterDiscord](https://cdn.totor13x.com/media/stuffs/scripts/telegram-status-sync/d47cad10-a479-49fd-a30b-9b52c1a58555_1280x1585.mp4)
 
 ## Специфические случаи
 - Вообще можно не использовать отдельный сервер на фласке, можно использовать AWS Lambda, Google Cloud Functions, Azure Functions, лично я использую именно AWS Lambda, но это уже совсем другая история.
