@@ -18,13 +18,13 @@ date: 2020-07-01
 
 Я врубил стримчанский на своем ютуб канале и пошел развлекаться. На этот стрим сразу же зашел знаете кто? Да, правильно, Тотор. В тот момент он находился в армии на службе. И предложил мне создать собственный проект на эту тематику. Я заинтересовался и начал изучать структуру.
 
-![](https://digital-garden.website.yandexcloud.net/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
 
 Мой батальон
 
 Через неделю игры, достиг того, что стал КМД батальона. Уже имел состав в 25 человек. Решили, сервер будет построен на собственно движке, но об этом будет ниже.
 
-![](https://digital-garden.website.yandexcloud.net/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
 
 Моя первая задача – придумать оформление (Hud)
 
@@ -35,31 +35,31 @@ date: 2020-07-01
 
 Идея состоит в том, чтобы человека повышать-понижать-переводить в другие батальоны, ВСЕГО по нажатию 1 кнопки.
 
-![](https://digital-garden.website.yandexcloud.net/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
 
 Черновой вариант
 
-![](https://digital-garden.website.yandexcloud.net/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
 
 Что получилось
 
 Далее я начал придумывать профессии. И получилась вот такая структура развития. (Ниже будут скрины, там все подробнее увидите).
 
-![](https://digital-garden.website.yandexcloud.net/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
 
 Структура профессий 
 
 Идея состоит в том, что клон, может развиваться только по 1 специальности: медик, инженер или пехотинец.
 
-![](https://digital-garden.website.yandexcloud.net/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
 
 Структура Инженеров
 
-![](https://digital-garden.website.yandexcloud.net/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
 
 Структура медиков
 
-![](https://digital-garden.website.yandexcloud.net/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
 
 Структура пехотинцев
 
@@ -75,15 +75,15 @@ date: 2020-07-01
 
 Ах да, еще же нужно было выбрать карту, на которой мы бы базировались. Тогда Тотор познакомил меня с Лебеном. Он вам известен. Была идея переделать уже готовую карту под наш лад. Выбрали всем уже знакомую, Ришимун. И вот, что у Лебена получилось сделать, не красота ли.
 
-![](https://digital-garden.website.yandexcloud.net/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
 
 Выход с кадетки
 
-![](https://digital-garden.website.yandexcloud.net/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
 
 Вид из зало собрания джедаев
 
-![](https://digital-garden.website.yandexcloud.net/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
 
 ВПП
 
@@ -96,15 +96,15 @@ date: 2020-07-01
 
 С моей части начались работы по созданию своих собственных анимаций.
 
-![](https://digital-garden.website.yandexcloud.net/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
 
 Наручники
 
-![](https://digital-garden.website.yandexcloud.net/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
 
 Руи спереди
 
-![](https://digital-garden.website.yandexcloud.net/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
 
 Руки вверх
 
@@ -112,7 +112,7 @@ date: 2020-07-01
 
 Я в сотый раз пересобрал контент, а так же сделал собственную модельку для профессии “Группа захвата“
 
-![](https://digital-garden.website.yandexcloud.net/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
 
 Щит
 

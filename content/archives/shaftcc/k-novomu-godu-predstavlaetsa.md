@@ -58,33 +58,33 @@ date: 2019-12-29
 
 Ну и напоследок некоторый материал из разработок:
 
-![](https://digital-garden.website.yandexcloud.net/media/archives/shaftcc/6293285d-3458-48d4-a5f0-35e26b0a2021_1280x720.mp4)
+![](https://cdn.totor13x.com/media/archives/shaftcc/6293285d-3458-48d4-a5f0-35e26b0a2021_1280x720.mp4)
 *Это самый первый набросок панели управления клонами батальона*
 
-![](https://digital-garden.website.yandexcloud.net/media/archives/shaftcc/30265741-531d-42d5-83bd-ed1c0e58ee5d_1064x600.mp4)
+![](https://cdn.totor13x.com/media/archives/shaftcc/30265741-531d-42d5-83bd-ed1c0e58ee5d_1064x600.mp4)
 *Эта гифка демонстрирует повороты головой и интегрированные световые мечи*
 
-![](https://digital-garden.website.yandexcloud.net/media/archives/shaftcc/05a48054-c5d4-4919-82e1-7e09d2aa8267_1064x600.mp4)
+![](https://cdn.totor13x.com/media/archives/shaftcc/05a48054-c5d4-4919-82e1-7e09d2aa8267_1064x600.mp4)
 *А это уже иммерсив-уведомления - для меня оказалось сложным сделать их, но ведь получилось? Главное что они вышли, а удобные или нет - решат боевые единицы ShaftSWRP*
 
-![](https://digital-garden.website.yandexcloud.net/media/archives/shaftcc/f5c04369-ccc8-41fc-bf6b-0d233962a99c_1280x917.mp4)
+![](https://cdn.totor13x.com/media/archives/shaftcc/f5c04369-ccc8-41fc-bf6b-0d233962a99c_1280x917.mp4)
 *Просто пример, как реализован прогресс-бар. Есть явные прогрехи, но пока что будет так.*
 
-![](https://digital-garden.website.yandexcloud.net/media/archives/shaftcc/987cbc30-1495-4d8e-abe0-6b9aaba6929b_1280x713.mp4)
+![](https://cdn.totor13x.com/media/archives/shaftcc/987cbc30-1495-4d8e-abe0-6b9aaba6929b_1280x713.mp4)
 *Первое внедрение кастомных анимаций. О боже, это оказалось крайне сложной задачей, но первая анимация - "поднять руки", внедрена.*
 
-![](https://digital-garden.website.yandexcloud.net/media/archives/shaftcc/b7f631a0-2fc6-4cc0-8696-163eba9858ad_1280x713.mp4)
+![](https://cdn.totor13x.com/media/archives/shaftcc/b7f631a0-2fc6-4cc0-8696-163eba9858ad_1280x713.mp4)
 
-![](https://digital-garden.website.yandexcloud.net/media/archives/shaftcc/fac30cd6-60cf-4201-b75c-c7b48946ec98_1280x719.mp4)
+![](https://cdn.totor13x.com/media/archives/shaftcc/fac30cd6-60cf-4201-b75c-c7b48946ec98_1280x719.mp4)
 *Как реализован механизм брони на движке СВРП, также на последней гифке еще одна кастомная анимация*
 
-![](https://digital-garden.website.yandexcloud.net/media/archives/shaftcc/ab97321b-ab64-43cd-8129-c65722b8b3ae_1280x783.mp4)
-![](https://digital-garden.website.yandexcloud.net/media/archives/shaftcc/c0765328-2299-48c3-a3a4-acaf73a4d259_1280x721.mp4)
+![](https://cdn.totor13x.com/media/archives/shaftcc/ab97321b-ab64-43cd-8129-c65722b8b3ae_1280x783.mp4)
+![](https://cdn.totor13x.com/media/archives/shaftcc/c0765328-2299-48c3-a3a4-acaf73a4d259_1280x721.mp4)
 *В будущем будет данная тикет-система*
 
-![](https://digital-garden.website.yandexcloud.net/media/archives/shaftcc/fe804b36-56dd-40a7-ba5b-2a4947690e86_1280x721.mp4)
-![](https://digital-garden.website.yandexcloud.net/media/archives/shaftcc/ea2c20fa-1e32-4b8e-a38d-a001e1e4b37e_1280x752.jpg)
+![](https://cdn.totor13x.com/media/archives/shaftcc/fe804b36-56dd-40a7-ba5b-2a4947690e86_1280x721.mp4)
+![](https://cdn.totor13x.com/media/archives/shaftcc/ea2c20fa-1e32-4b8e-a38d-a001e1e4b37e_1280x752.jpg)
 *А это уже мои эксперименты с позициями шапок, масок и прочего и выбора бодигрупп*
 
-![](https://digital-garden.website.yandexcloud.net/media/archives/shaftcc/7e457c4c-356f-48ca-be80-588e8be368d6_1280x695.mp4)
+![](https://cdn.totor13x.com/media/archives/shaftcc/7e457c4c-356f-48ca-be80-588e8be368d6_1280x695.mp4)
 *И просто интересный момент*
