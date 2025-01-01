@@ -28,7 +28,7 @@ tags: [garrysmod]
 
 > [!info]+ [Легкое создание скинов для моделек](https://web.archive.org/web/20221201010918/https://www.gmod-fan.ru/forum/gmodworld/topic-6472.html)
 > - [Ссылка на прогу](https://developer.valvesoftware.com/wiki/Source_Model_Skin_Editor)
-> - [Ссылка на видос - урок](https://www.youtube.com/watch?v=HnDuU706vXQ&list=PLPirbc4bIg5x_4atpZsyK9bgGftUcx425&index=4) если ссылка не доступна, то **[вот архивированное](https://cdn.totor13x.com/media/stuffs/garrysmod/instrumenti-links/6a2c2ce6-3b83-4ed5-aeba-40a8fad442b9_1280x720.mp4)**
+> - [Ссылка на видос - урок](https://www.youtube.com/watch?v=HnDuU706vXQ&list=PLPirbc4bIg5x_4atpZsyK9bgGftUcx425&index=4) если ссылка не доступна, то **[вот архивированное](https://digital-garden.website.yandexcloud.net/media/stuffs/garrysmod/instrumenti-links/6a2c2ce6-3b83-4ed5-aeba-40a8fad442b9_1280x720.mp4)**
 
 [Прокрутка текстур и создание матрицы](https://nodraw.net/2010/01/dynamic-materials-with-proxies/)
 
@@ -40,7 +40,7 @@ tags: [garrysmod]
 
 На самом деле у нас сформировался довольно большой опыт в создании моделей, текстур, анимаций, партиклей и прочих-прочих штучек для сурса. По многим аспектам можно написать отдельные посты, если будет на это время. Из неизвестных доселе фич - кастомные анимации, которые достаточно хорошо вписываются в движок гарриса, если их правильно сделать. Но это уже совсем другая история.
 
-![Пример использования кастомных анимаций на сврп](https://cdn.totor13x.com/media/stuffs/garrysmod/instrumenti-links/5879051b-fce5-4da2-88e5-21bd8c3fa915_1280x720.mp4)
+![Пример использования кастомных анимаций на сврп](https://digital-garden.website.yandexcloud.net/media/stuffs/garrysmod/instrumenti-links/5879051b-fce5-4da2-88e5-21bd8c3fa915_1280x720.mp4)
 *Пример использования кастомных анимаций на сврп*
 
 Сами уроки были собраны еще в 2019 году, когда мы активно занимались разработкой SWRP. Сейчас, конечно, все это может работать по другому, но может быть кому-то пригодится.
