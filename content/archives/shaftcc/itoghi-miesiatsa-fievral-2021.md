@@ -11,7 +11,7 @@ date: 2021-03-03
 
 Также хочу поделиться со статистикой за квартал, и видно что онлайн просел. С одной стороны, я знаю что в среднем за день посещает 40 человек, и это очень здорово, так что стоит быть объективным - хоть и онлайн просел, есть постоянные игроки и ради вас я пишу пост.
 
-![](https://cdn.totor13x.com/images/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411_OUFjQ0JZTEloNGlCaVhsN2hmaFhqZGlBZS9KSA==.jpg)
 *Думаю, что можно разместить здесь опрос:*
 
 Я думаю, что когда-нибудь будет реализовано мобильное приложение. Если, конечно, сама по себе есть в этом нужда.
@@ -22,7 +22,7 @@ date: 2021-03-03
 
 За этот промежуток времени были сделаны трейды и общее хранилище предметов.
 
-![](https://cdn.totor13x.com/images/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411_OUFjQ0JZTEloNGlCaVhsN2hmaFhqZGlBZS9KSA==.jpg)
 *Окно хранилища*
 
 Коротко о прошедших тестированиях: в общем первые тесты показали как система умеет падать и биться в конвульсиях. Это, просто, ******. Пришлось потратить около недели, чтобы понять че вообще происходит.
@@ -33,19 +33,19 @@ date: 2021-03-03
 
 Впрочем есть, что может и заинтересовать:
 
-![](https://cdn.totor13x.com/images/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411_OUFjQ0JZTEloNGlCaVhsN2hmaFhqZGlBZS9KSA==.jpg)
 
 Станет доступен функционал по просмотру онлайна за неделю, инвентарь с ТТС предметами и их последующая активация с сайта, информация по блокировкам, изображения, етц.
 
-![](https://cdn.totor13x.com/images/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411_OUFjQ0JZTEloNGlCaVhsN2hmaFhqZGlBZS9KSA==.jpg)
 *Страница онлайна*
 
-![](https://cdn.totor13x.com/images/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411_OUFjQ0JZTEloNGlCaVhsN2hmaFhqZGlBZS9KSA==.jpg)
 *Инвентарь ТТС*
 
 Также была доработана страница блокировок, можно накладывать или убирать фильтры и это все хорошо выглядит с мобильного телефона.
 
-![](https://cdn.totor13x.com/images/archives/shaftcc/e53a2383-7284-4102-94d2-0cb1ee64de98_1280x951.mp4)
+![](https://cdn.totor13x.com/media/archives/shaftcc/e53a2383-7284-4102-94d2-0cb1ee64de98_1280x951_UFFnQ0JZQllDbGlIaDRlSGg0aUhoL1o0QjQ1Mw==.mp4)
 
 Также была тонна фиксов и улучшений серверной стороны, добавлена интеграция с дискордом и остальное что тоже не имеет значения для большинства.
 

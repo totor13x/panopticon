@@ -289,7 +289,7 @@ h1 {
   font-size: 1.75rem;
   margin-top: 2.25rem;
   margin-bottom: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   font-family: 'PixelFont';
 }
 
@@ -297,7 +297,7 @@ h2 {
   font-size: 1.4rem;
   margin-top: 1.9rem;
   margin-bottom: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   font-family: 'PixelFont';
 }
 
@@ -305,7 +305,7 @@ h3 {
   font-size: 1.12rem;
   margin-top: 1.62rem;
   margin-bottom: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   font-family: 'PixelFont';
 }
 
@@ -445,10 +445,14 @@ img {
 a.bp {
   display: block;
   margin: 1rem 0;
+  position: relative;
   width: 100%;
   & > img {
     width: 100%;
     margin: 0;
+    display: block;
+    position: relative;
+    z-index: 1;
   }
 }
 p > a.bp + em {
@@ -473,6 +477,12 @@ a.bp.is-video {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 3;
+    transition: width 0.2s ease;
+  }
+  &:hover::before {
+    // content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xml%3Aspace%3D%22preserve%22%20viewBox%3D%220%200%20163.861%20163.861%22%3E%3Cpath%20fill%3D%22%23ff8870%22%20d%3D%22M34.857%203.613C20.084-4.861%208.107%202.081%208.107%2019.106v125.637c0%2017.042%2011.977%2023.975%2026.75%2015.509L144.67%2097.275c14.778-8.477%2014.778-22.211%200-30.686L34.857%203.613z%22%2F%3E%3C%2Fsvg%3E");
+    width: 120px;
   }
 }
 .glightbox-clean .gslide-description {

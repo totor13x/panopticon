@@ -18,13 +18,13 @@ date: 2020-07-01
 
 Я врубил стримчанский на своем ютуб канале и пошел развлекаться. На этот стрим сразу же зашел знаете кто? Да, правильно, Тотор. В тот момент он находился в армии на службе. И предложил мне создать собственный проект на эту тематику. Я заинтересовался и начал изучать структуру.
 
-![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411_OUFjQ0JZTEloNGlCaVhsN2hmaFhqZGlBZS9KSA==.jpg)
 
 Мой батальон
 
 Через неделю игры, достиг того, что стал КМД батальона. Уже имел состав в 25 человек. Решили, сервер будет построен на собственно движке, но об этом будет ниже.
 
-![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411_OUFjQ0JZTEloNGlCaVhsN2hmaFhqZGlBZS9KSA==.jpg)
 
 Моя первая задача – придумать оформление (Hud)
 
@@ -35,31 +35,31 @@ date: 2020-07-01
 
 Идея состоит в том, чтобы человека повышать-понижать-переводить в другие батальоны, ВСЕГО по нажатию 1 кнопки.
 
-![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411_OUFjQ0JZTEloNGlCaVhsN2hmaFhqZGlBZS9KSA==.jpg)
 
 Черновой вариант
 
-![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411_OUFjQ0JZTEloNGlCaVhsN2hmaFhqZGlBZS9KSA==.jpg)
 
 Что получилось
 
 Далее я начал придумывать профессии. И получилась вот такая структура развития. (Ниже будут скрины, там все подробнее увидите).
 
-![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411_OUFjQ0JZTEloNGlCaVhsN2hmaFhqZGlBZS9KSA==.jpg)
 
 Структура профессий 
 
 Идея состоит в том, что клон, может развиваться только по 1 специальности: медик, инженер или пехотинец.
 
-![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411_OUFjQ0JZTEloNGlCaVhsN2hmaFhqZGlBZS9KSA==.jpg)
 
 Структура Инженеров
 
-![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411_OUFjQ0JZTEloNGlCaVhsN2hmaFhqZGlBZS9KSA==.jpg)
 
 Структура медиков
 
-![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411_OUFjQ0JZTEloNGlCaVhsN2hmaFhqZGlBZS9KSA==.jpg)
 
 Структура пехотинцев
 
@@ -75,15 +75,15 @@ date: 2020-07-01
 
 Ах да, еще же нужно было выбрать карту, на которой мы бы базировались. Тогда Тотор познакомил меня с Лебеном. Он вам известен. Была идея переделать уже готовую карту под наш лад. Выбрали всем уже знакомую, Ришимун. И вот, что у Лебена получилось сделать, не красота ли.
 
-![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411_OUFjQ0JZTEloNGlCaVhsN2hmaFhqZGlBZS9KSA==.jpg)
 
 Выход с кадетки
 
-![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411_OUFjQ0JZTEloNGlCaVhsN2hmaFhqZGlBZS9KSA==.jpg)
 
 Вид из зало собрания джедаев
 
-![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411_OUFjQ0JZTEloNGlCaVhsN2hmaFhqZGlBZS9KSA==.jpg)
 
 ВПП
 
@@ -96,15 +96,15 @@ date: 2020-07-01
 
 С моей части начались работы по созданию своих собственных анимаций.
 
-![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411_OUFjQ0JZTEloNGlCaVhsN2hmaFhqZGlBZS9KSA==.jpg)
 
 Наручники
 
-![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411_OUFjQ0JZTEloNGlCaVhsN2hmaFhqZGlBZS9KSA==.jpg)
 
 Руи спереди
 
-![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411_OUFjQ0JZTEloNGlCaVhsN2hmaFhqZGlBZS9KSA==.jpg)
 
 Руки вверх
 
@@ -112,7 +112,7 @@ date: 2020-07-01
 
 Я в сотый раз пересобрал контент, а так же сделал собственную модельку для профессии “Группа захвата“
 
-![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411.jpg)
+![](https://cdn.totor13x.com/media/archives/8c8cf1a1-5766-401e-a801-f99c7661ddf9_564x411_OUFjQ0JZTEloNGlCaVhsN2hmaFhqZGlBZS9KSA==.jpg)
 
 Щит
 

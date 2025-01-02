@@ -4,6 +4,7 @@ import rehypeRaw, { Root } from "rehype-raw"
 import { visit } from "unist-util-visit"
 import { toHtml } from "hast-util-to-html"
 import { VFile } from "vfile"
+import * as ThumbHash from 'thumbhash'
 
 export const BiggerPicture: QuartzTransformerPlugin = () => ({
   name: "BiggerPicture",
@@ -28,12 +29,16 @@ export const BiggerPicture: QuartzTransformerPlugin = () => ({
                     
                     if (filename.includes('_')) {
                       const extension = filename.split('.').pop()
+                      // console.log(filename)
                       const to_split = filename.split('_')
+                      const dir = url.href.replace(filename, '')
+                      let media_link = `${dir}${to_split[0]}.${extension}`
+
                       if (to_split[1].includes('x')) {
                         const dimensions = to_split[1].split('.')[0].split('x')
                         const [width, height] = dimensions.map(x => parseInt(x))
-                        const dir = url.href.replace(filename, '')
                         const thumb = `${dir}${to_split[0]}_thumb.jpg`
+                        media_link = `${dir}${to_split[0]}_${to_split[1]}.${extension}`
                         
                         
                         const parentChildrens = parent?.children
@@ -60,7 +65,7 @@ export const BiggerPicture: QuartzTransformerPlugin = () => ({
 
                         node.tagName = 'a'
                         node.properties = {
-                          href: src,
+                          href: media_link,
                           title: alt,
                           class: 'bp glightbox',
                           // 'data-thumb': thumb,
@@ -72,27 +77,69 @@ export const BiggerPicture: QuartzTransformerPlugin = () => ({
                           // 'data-title': alt,
                           'data-description': caption,
                           'data-desc-position': "bottom",
+                          'height': `${height}px`,
+                          'width': `${width}px`,
                           // 'data-type': "image",
                           'data-effect': "fade",
-                          'data-width': width,
-                          'data-height': height,
                           'data-zoomable': "true",
                           'data-draggable': "true",
+                          'data-touch-navigation': "false",
                           ...attr
                         }
 
-                        node.children = [
-                          {
+                        const hashed = [{
+                          type: 'element',
+                          tagName: 'img',
+                          properties: {
+                            src: thumb,
+                            title: alt,
+                            alt: alt,
+                            style: `aspect-ratio: ${width} / ${height};`
+                          },
+                          children: [],
+                        },]
+                        if (to_split[2]) {
+                          let bytes = atob(atob(to_split[2].split('.')[0])) // , 'base64').toString('base64')
+                          let hash = new Uint8Array(bytes.length)
+                          for (let i = 0; i < bytes.length; i++)
+                            hash[i] = bytes.charCodeAt(i)
+                          // console.log(hash)
+                          // consol
+
+                          // const image = await loadImage(imagePath);
+                          // const width = image.width;
+                          // const height = image.height;
+                        
+                          // const scale = Math.min(maxSize / width, maxSize / height);
+                          // const resizedWidth = Math.floor(width * scale);
+                          // const resizedHeight = Math.floor(height * scale);
+                        
+                          // const canvas = createCanvas(resizedWidth, resizedHeight);
+                          // const ctx = canvas.getContext("2d");
+                          // ctx.drawImage(image, 0, 0, resizedWidth, resizedHeight);
+                        
+                          // const imageData = ctx.getImageData(0, 0, resizedWidth, resizedHeight);
+                          // const rgba = new Uint8Array(imageData.data.buffer);
+                          // const hash = rgbaToThumbHash(resizedWidth, resizedHeight, rgba);
+                          // const { w, h, rgba } = ThumbHash.thumbHashToRGBA(hash)
+                          // console.log(rgba)
+                          const thumbimg = ThumbHash.thumbHashToDataURL(hash)
+                          // console.log(thumbimg, hash)
+                          hashed.push({
                             type: 'element',
                             tagName: 'img',
                             properties: {
-                              src: thumb,
+                              src: thumbimg,
                               title: alt,
                               alt: alt,
+                              style: `aspect-ratio: ${width} / ${height};top:0;position:absolute;z-index:0;`
                             },
-                            children: []
-                          }
-                        ]
+                            children: [],
+                          })
+
+                        }
+
+                        node.children = hashed
                       }
                     }
                   }
